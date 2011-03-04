@@ -1,0 +1,34 @@
+\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\bin\Debug\Walter.exe
+\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\bin\Debug\Walter.pdb
+\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\bin\Debug\Walter.xml
+\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\ResolveAssemblyReference.cache
+\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Resources.resources
+\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.read.1.tlog
+\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.write.1.tlog
+\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.exe
+\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.xml
+\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.pdb
+\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.MainMenu.resources
+\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.NewJob.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Daily_Form.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Material_invoice.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Edit_Details.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Customer.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Splash.resources
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.exe
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.xml
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.pdb
+C:\Users\Ted\Desktop\Walter\Walter\bin\Debug\Walter.exe
+C:\Users\Ted\Desktop\Walter\Walter\bin\Debug\Walter.pdb
+C:\Users\Ted\Desktop\Walter\Walter\bin\Debug\Walter.xml
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Add_Customer.resources
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Add_Material_invoice.resources
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Daily_Form.resources
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Edit_Details.resources
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.MainMenu.resources
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Resources.resources
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.NewJob.resources
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Splash.resources
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\GenerateResource.write.1.tlog
