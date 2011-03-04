@@ -22,9 +22,9 @@ Partial Class Add_Material_invoice
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DF_Job = New System.Windows.Forms.ComboBox()
-        Me.DF_Hours_worked = New System.Windows.Forms.TextBox()
-        Me.DF_Worker = New System.Windows.Forms.TextBox()
+        Me.ADM_Supplier_Name = New System.Windows.Forms.ComboBox()
+        Me.ADM_Hours_worked = New System.Windows.Forms.TextBox()
+        Me.ADM_Cost = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -34,27 +34,27 @@ Partial Class Add_Material_invoice
         Me.AMI_Save_and_new = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'DF_Job
+        'ADM_Supplier_Name
         '
-        Me.DF_Job.FormattingEnabled = True
-        Me.DF_Job.Location = New System.Drawing.Point(116, 37)
-        Me.DF_Job.Name = "DF_Job"
-        Me.DF_Job.Size = New System.Drawing.Size(156, 21)
-        Me.DF_Job.TabIndex = 35
+        Me.ADM_Supplier_Name.FormattingEnabled = True
+        Me.ADM_Supplier_Name.Location = New System.Drawing.Point(116, 37)
+        Me.ADM_Supplier_Name.Name = "ADM_Supplier_Name"
+        Me.ADM_Supplier_Name.Size = New System.Drawing.Size(156, 21)
+        Me.ADM_Supplier_Name.TabIndex = 35
         '
-        'DF_Hours_worked
+        'ADM_Hours_worked
         '
-        Me.DF_Hours_worked.Location = New System.Drawing.Point(116, 90)
-        Me.DF_Hours_worked.Name = "DF_Hours_worked"
-        Me.DF_Hours_worked.Size = New System.Drawing.Size(156, 20)
-        Me.DF_Hours_worked.TabIndex = 34
+        Me.ADM_Hours_worked.Location = New System.Drawing.Point(116, 90)
+        Me.ADM_Hours_worked.Name = "ADM_Hours_worked"
+        Me.ADM_Hours_worked.Size = New System.Drawing.Size(156, 20)
+        Me.ADM_Hours_worked.TabIndex = 34
         '
-        'DF_Worker
+        'ADM_Cost
         '
-        Me.DF_Worker.Location = New System.Drawing.Point(116, 64)
-        Me.DF_Worker.Name = "DF_Worker"
-        Me.DF_Worker.Size = New System.Drawing.Size(156, 20)
-        Me.DF_Worker.TabIndex = 33
+        Me.ADM_Cost.Location = New System.Drawing.Point(116, 64)
+        Me.ADM_Cost.Name = "ADM_Cost"
+        Me.ADM_Cost.Size = New System.Drawing.Size(156, 20)
+        Me.ADM_Cost.TabIndex = 33
         '
         'Label4
         '
@@ -127,9 +127,9 @@ Partial Class Add_Material_invoice
         Me.Controls.Add(Me.AMI_Save_and_new)
         Me.Controls.Add(Me.AMI_Done)
         Me.Controls.Add(Me.ADM_Cancel)
-        Me.Controls.Add(Me.DF_Job)
-        Me.Controls.Add(Me.DF_Hours_worked)
-        Me.Controls.Add(Me.DF_Worker)
+        Me.Controls.Add(Me.ADM_Supplier_Name)
+        Me.Controls.Add(Me.ADM_Hours_worked)
+        Me.Controls.Add(Me.ADM_Cost)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -140,9 +140,9 @@ Partial Class Add_Material_invoice
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents DF_Job As System.Windows.Forms.ComboBox
-    Friend WithEvents DF_Hours_worked As System.Windows.Forms.TextBox
-    Friend WithEvents DF_Worker As System.Windows.Forms.TextBox
+    Friend WithEvents ADM_Supplier_Name As System.Windows.Forms.ComboBox
+    Friend WithEvents ADM_Hours_worked As System.Windows.Forms.TextBox
+    Friend WithEvents ADM_Cost As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label

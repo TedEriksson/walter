@@ -39,7 +39,7 @@ Partial Class Daily_Form
         '
         'DF_Task
         '
-        Me.DF_Task.Location = New System.Drawing.Point(116, 296)
+        Me.DF_Task.Location = New System.Drawing.Point(116, 145)
         Me.DF_Task.Name = "DF_Task"
         Me.DF_Task.Size = New System.Drawing.Size(227, 20)
         Me.DF_Task.TabIndex = 26
@@ -54,7 +54,7 @@ Partial Class Daily_Form
         'NJ_Cancel
         '
         Me.NJ_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.NJ_Cancel.Location = New System.Drawing.Point(268, 322)
+        Me.NJ_Cancel.Location = New System.Drawing.Point(260, 171)
         Me.NJ_Cancel.Name = "NJ_Cancel"
         Me.NJ_Cancel.Size = New System.Drawing.Size(75, 23)
         Me.NJ_Cancel.TabIndex = 22
@@ -63,7 +63,7 @@ Partial Class Daily_Form
         '
         'NJ_Done
         '
-        Me.NJ_Done.Location = New System.Drawing.Point(187, 322)
+        Me.NJ_Done.Location = New System.Drawing.Point(179, 171)
         Me.NJ_Done.Name = "NJ_Done"
         Me.NJ_Done.Size = New System.Drawing.Size(75, 23)
         Me.NJ_Done.TabIndex = 21
@@ -73,7 +73,7 @@ Partial Class Daily_Form
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(12, 299)
+        Me.Label6.Location = New System.Drawing.Point(12, 148)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(34, 13)
         Me.Label6.TabIndex = 20
@@ -153,7 +153,7 @@ Partial Class Daily_Form
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.NJ_Cancel
-        Me.ClientSize = New System.Drawing.Size(356, 353)
+        Me.ClientSize = New System.Drawing.Size(356, 202)
         Me.Controls.Add(Me.DF_Date)
         Me.Controls.Add(Me.DF_Worker)
         Me.Controls.Add(Me.DF_Job)
