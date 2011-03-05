@@ -67,9 +67,9 @@ Namespace My.Resources
             End Get
         End Property
         
-        Friend ReadOnly Property waltersplash() As System.Drawing.Bitmap
+        Friend ReadOnly Property walter_spalshhs() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("waltersplash", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("walter spalshhs", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

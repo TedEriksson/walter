@@ -184,7 +184,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\walter.png" />
-    <None Include="Resources\waltersplash1.png" />
+    <Content Include="Resources\walter spalshhs.png" />
     <Content Include="walter.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
