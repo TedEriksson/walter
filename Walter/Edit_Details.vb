@@ -74,6 +74,17 @@ Public Class Edit_Details
         myConnection.Close()
         'End of Special Query'
     End Sub
+
+
+    Private Sub EDW_Done_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles EDW_Done.Click
+        Dim dlgRes As DialogResult
+        dlgRes = MessageBox.Show("Are you Sure you want to change this Record?", "Edit Details of Job", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If dlgRes = DialogResult.Yes Then
+            SQLWriting("UPDATE Worker SET Worker_Name = '" + EDW_Worker_Name.Text + "', Address1 = '" + EDW_A1.Text + "', Address2 = '" + EDW_A2.Text + "', Postcode = '" + EDW_Postcode.Text + "' , Hourly_Rate = " + EDW_HR.Text + " WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + EDW_Worker.Text + "'"))
+            MainMenu.Visible = True
+            Me.Close()
+        End If
+    End Sub
 End Class
 
 

@@ -48,7 +48,7 @@ Partial Class Edit_Details
         Me.EDW_A1 = New System.Windows.Forms.TextBox()
         Me.EDW_Worker_Name = New System.Windows.Forms.TextBox()
         Me.EDW_Cancel = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.EDW_Done = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -258,7 +258,7 @@ Partial Class Edit_Details
         Me.TabPage2.Controls.Add(Me.EDW_A1)
         Me.TabPage2.Controls.Add(Me.EDW_Worker_Name)
         Me.TabPage2.Controls.Add(Me.EDW_Cancel)
-        Me.TabPage2.Controls.Add(Me.Button2)
+        Me.TabPage2.Controls.Add(Me.EDW_Done)
         Me.TabPage2.Controls.Add(Me.Label8)
         Me.TabPage2.Controls.Add(Me.Label9)
         Me.TabPage2.Controls.Add(Me.Label11)
@@ -332,14 +332,14 @@ Partial Class Edit_Details
         Me.EDW_Cancel.Text = "Cancel"
         Me.EDW_Cancel.UseVisualStyleBackColor = True
         '
-        'Button2
+        'EDW_Done
         '
-        Me.Button2.Location = New System.Drawing.Point(138, 200)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 35
-        Me.Button2.Text = "Done"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.EDW_Done.Location = New System.Drawing.Point(138, 200)
+        Me.EDW_Done.Name = "EDW_Done"
+        Me.EDW_Done.Size = New System.Drawing.Size(75, 23)
+        Me.EDW_Done.TabIndex = 35
+        Me.EDW_Done.Text = "Done"
+        Me.EDW_Done.UseVisualStyleBackColor = True
         '
         'Label8
         '
@@ -648,7 +648,7 @@ Partial Class Edit_Details
     Friend WithEvents EDW_A1 As System.Windows.Forms.TextBox
     Friend WithEvents EDW_Worker_Name As System.Windows.Forms.TextBox
     Friend WithEvents EDW_Cancel As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents EDW_Done As System.Windows.Forms.Button
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
