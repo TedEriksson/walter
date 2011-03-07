@@ -6,6 +6,8 @@ Public Class Edit_Details
         Me.Visible = False
     End Sub
 
+
+    'Edit Details of Job'
     Private Sub EDJ_Job_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles EDJ_Job.GotFocus
         Populate_ComboBox(EDJ_Job, "SELECT Job_Name FROM Jobs")
     End Sub
@@ -46,4 +48,34 @@ Public Class Edit_Details
     Private Sub EDJ_Customer_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles EDJ_Customer.GotFocus
         Populate_ComboBox(EDJ_Customer, "SELECT Customer_Name FROM Customer")
     End Sub
+
+
+    'Edit Details of Worker'
+    Private Sub EDW_Worker_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles EDW_Worker.GotFocus
+        Populate_ComboBox(EDW_Worker, "SELECT Worker_Name FROM Worker")
+    End Sub
+
+    Private Sub EDW_Worker_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles EDW_Worker.SelectedIndexChanged
+        'Special Populating SQL Query'
+        Dim myConnection As New OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=" & Application.StartupPath & "\..\..\walter_database.mdb")
+        Dim mySelectQuery As String = "SELECT * FROM Worker WHERE Worker_Name = '" + EDW_Worker.Text + "'"
+        Dim myCommand As New OleDbCommand(mySelectQuery, myConnection)
+        myConnection.Open()
+        Dim myReader As OleDbDataReader
+        myReader = myCommand.ExecuteReader()
+        While myReader.Read()
+            EDW_Worker_Name.Text = myReader.GetString(1)
+            EDW_A1.Text = myReader.GetValue(2)
+            EDW_A2.Text = myReader.GetValue(3)
+            EDW_Postcode.Text = myReader.GetString(4)
+            EDW_HR.Text = myReader.GetString(5)
+        End While
+        myReader.Close()
+        myConnection.Close()
+        'End of Special Query'
+    End Sub
 End Class
+
+
+
+

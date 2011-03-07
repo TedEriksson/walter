@@ -24,6 +24,7 @@ Partial Class Edit_Details
     Private Sub InitializeComponent()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.EDJ_Customer = New System.Windows.Forms.ComboBox()
         Me.EDJ_Job = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.EDJ_Address2 = New System.Windows.Forms.TextBox()
@@ -39,13 +40,13 @@ Partial Class Edit_Details
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.EDW_Worker = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.EDW_HR = New System.Windows.Forms.TextBox()
+        Me.EDW_Postcode = New System.Windows.Forms.TextBox()
+        Me.EDW_A2 = New System.Windows.Forms.TextBox()
+        Me.EDW_A1 = New System.Windows.Forms.TextBox()
+        Me.EDW_Worker_Name = New System.Windows.Forms.TextBox()
         Me.EDW_Cancel = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -76,7 +77,6 @@ Partial Class Edit_Details
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.EDJ_Customer = New System.Windows.Forms.ComboBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -122,6 +122,14 @@ Partial Class Edit_Details
         Me.TabPage1.Size = New System.Drawing.Size(303, 234)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Job"
+        '
+        'EDJ_Customer
+        '
+        Me.EDJ_Customer.FormattingEnabled = True
+        Me.EDJ_Customer.Location = New System.Drawing.Point(113, 64)
+        Me.EDJ_Customer.Name = "EDJ_Customer"
+        Me.EDJ_Customer.Size = New System.Drawing.Size(180, 21)
+        Me.EDJ_Customer.TabIndex = 30
         '
         'EDJ_Job
         '
@@ -242,13 +250,13 @@ Partial Class Edit_Details
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.SystemColors.Control
-        Me.TabPage2.Controls.Add(Me.ComboBox2)
+        Me.TabPage2.Controls.Add(Me.EDW_Worker)
         Me.TabPage2.Controls.Add(Me.Label7)
-        Me.TabPage2.Controls.Add(Me.TextBox3)
-        Me.TabPage2.Controls.Add(Me.TextBox4)
-        Me.TabPage2.Controls.Add(Me.TextBox6)
-        Me.TabPage2.Controls.Add(Me.TextBox7)
-        Me.TabPage2.Controls.Add(Me.TextBox8)
+        Me.TabPage2.Controls.Add(Me.EDW_HR)
+        Me.TabPage2.Controls.Add(Me.EDW_Postcode)
+        Me.TabPage2.Controls.Add(Me.EDW_A2)
+        Me.TabPage2.Controls.Add(Me.EDW_A1)
+        Me.TabPage2.Controls.Add(Me.EDW_Worker_Name)
         Me.TabPage2.Controls.Add(Me.EDW_Cancel)
         Me.TabPage2.Controls.Add(Me.Button2)
         Me.TabPage2.Controls.Add(Me.Label8)
@@ -262,13 +270,13 @@ Partial Class Edit_Details
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Worker"
         '
-        'ComboBox2
+        'EDW_Worker
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(113, 11)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(181, 21)
-        Me.ComboBox2.TabIndex = 44
+        Me.EDW_Worker.FormattingEnabled = True
+        Me.EDW_Worker.Location = New System.Drawing.Point(113, 11)
+        Me.EDW_Worker.Name = "EDW_Worker"
+        Me.EDW_Worker.Size = New System.Drawing.Size(181, 21)
+        Me.EDW_Worker.TabIndex = 44
         '
         'Label7
         '
@@ -279,40 +287,40 @@ Partial Class Edit_Details
         Me.Label7.TabIndex = 43
         Me.Label7.Text = "Worker:"
         '
-        'TextBox3
+        'EDW_HR
         '
-        Me.TextBox3.Location = New System.Drawing.Point(113, 142)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox3.TabIndex = 42
+        Me.EDW_HR.Location = New System.Drawing.Point(113, 142)
+        Me.EDW_HR.Name = "EDW_HR"
+        Me.EDW_HR.Size = New System.Drawing.Size(181, 20)
+        Me.EDW_HR.TabIndex = 42
         '
-        'TextBox4
+        'EDW_Postcode
         '
-        Me.TextBox4.Location = New System.Drawing.Point(113, 116)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox4.TabIndex = 41
+        Me.EDW_Postcode.Location = New System.Drawing.Point(113, 116)
+        Me.EDW_Postcode.Name = "EDW_Postcode"
+        Me.EDW_Postcode.Size = New System.Drawing.Size(181, 20)
+        Me.EDW_Postcode.TabIndex = 41
         '
-        'TextBox6
+        'EDW_A2
         '
-        Me.TextBox6.Location = New System.Drawing.Point(113, 90)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox6.TabIndex = 39
+        Me.EDW_A2.Location = New System.Drawing.Point(113, 90)
+        Me.EDW_A2.Name = "EDW_A2"
+        Me.EDW_A2.Size = New System.Drawing.Size(181, 20)
+        Me.EDW_A2.TabIndex = 39
         '
-        'TextBox7
+        'EDW_A1
         '
-        Me.TextBox7.Location = New System.Drawing.Point(113, 64)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox7.TabIndex = 38
+        Me.EDW_A1.Location = New System.Drawing.Point(113, 64)
+        Me.EDW_A1.Name = "EDW_A1"
+        Me.EDW_A1.Size = New System.Drawing.Size(181, 20)
+        Me.EDW_A1.TabIndex = 38
         '
-        'TextBox8
+        'EDW_Worker_Name
         '
-        Me.TextBox8.Location = New System.Drawing.Point(113, 38)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox8.TabIndex = 37
+        Me.EDW_Worker_Name.Location = New System.Drawing.Point(113, 38)
+        Me.EDW_Worker_Name.Name = "EDW_Worker_Name"
+        Me.EDW_Worker_Name.Size = New System.Drawing.Size(181, 20)
+        Me.EDW_Worker_Name.TabIndex = 37
         '
         'EDW_Cancel
         '
@@ -591,14 +599,6 @@ Partial Class Edit_Details
         Me.Label19.TabIndex = 45
         Me.Label19.Text = "Supplier Name:"
         '
-        'EDJ_Customer
-        '
-        Me.EDJ_Customer.FormattingEnabled = True
-        Me.EDJ_Customer.Location = New System.Drawing.Point(113, 64)
-        Me.EDJ_Customer.Name = "EDJ_Customer"
-        Me.EDJ_Customer.Size = New System.Drawing.Size(180, 21)
-        Me.EDJ_Customer.TabIndex = 30
-        '
         'Edit_Details
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -640,13 +640,13 @@ Partial Class Edit_Details
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents EDJ_Job As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents EDW_Worker As System.Windows.Forms.ComboBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents EDW_HR As System.Windows.Forms.TextBox
+    Friend WithEvents EDW_Postcode As System.Windows.Forms.TextBox
+    Friend WithEvents EDW_A2 As System.Windows.Forms.TextBox
+    Friend WithEvents EDW_A1 As System.Windows.Forms.TextBox
+    Friend WithEvents EDW_Worker_Name As System.Windows.Forms.TextBox
     Friend WithEvents EDW_Cancel As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label8 As System.Windows.Forms.Label
