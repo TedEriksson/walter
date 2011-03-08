@@ -85,6 +85,11 @@ Public Class Edit_Details
             Me.Close()
         End If
     End Sub
+
+
+    'edit details of customer'
+
+
 End Class
 
 

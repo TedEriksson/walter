@@ -54,7 +54,7 @@ Partial Class Edit_Details
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.EDC_Customer = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
@@ -380,7 +380,7 @@ Partial Class Edit_Details
         'TabPage3
         '
         Me.TabPage3.BackColor = System.Drawing.SystemColors.Control
-        Me.TabPage3.Controls.Add(Me.ComboBox3)
+        Me.TabPage3.Controls.Add(Me.EDC_Customer)
         Me.TabPage3.Controls.Add(Me.Label10)
         Me.TabPage3.Controls.Add(Me.TextBox5)
         Me.TabPage3.Controls.Add(Me.TextBox9)
@@ -397,13 +397,13 @@ Partial Class Edit_Details
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Customer"
         '
-        'ComboBox3
+        'EDC_Customer
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(113, 11)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(181, 21)
-        Me.ComboBox3.TabIndex = 55
+        Me.EDC_Customer.FormattingEnabled = True
+        Me.EDC_Customer.Location = New System.Drawing.Point(113, 11)
+        Me.EDC_Customer.Name = "EDC_Customer"
+        Me.EDC_Customer.Size = New System.Drawing.Size(181, 21)
+        Me.EDC_Customer.TabIndex = 55
         '
         'Label10
         '
@@ -653,7 +653,7 @@ Partial Class Edit_Details
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents EDC_Customer As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
