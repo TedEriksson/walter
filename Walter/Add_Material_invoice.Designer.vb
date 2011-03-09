@@ -32,7 +32,7 @@ Partial Class Add_Material_invoice
         Me.AMI_Done = New System.Windows.Forms.Button()
         Me.AMI_Save_and_new = New System.Windows.Forms.Button()
         Me.AMI_Job_Name = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.AMI_Date = New System.Windows.Forms.DateTimePicker()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -122,13 +122,13 @@ Partial Class Add_Material_invoice
         Me.AMI_Job_Name.Size = New System.Drawing.Size(156, 21)
         Me.AMI_Job_Name.TabIndex = 39
         '
-        'DateTimePicker1
+        'AMI_Date
         '
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(116, 112)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(156, 20)
-        Me.DateTimePicker1.TabIndex = 40
+        Me.AMI_Date.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.AMI_Date.Location = New System.Drawing.Point(116, 112)
+        Me.AMI_Date.Name = "AMI_Date"
+        Me.AMI_Date.Size = New System.Drawing.Size(156, 20)
+        Me.AMI_Date.TabIndex = 40
         '
         'Label5
         '
@@ -145,7 +145,7 @@ Partial Class Add_Material_invoice
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 172)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.AMI_Date)
         Me.Controls.Add(Me.AMI_Job_Name)
         Me.Controls.Add(Me.AMI_Save_and_new)
         Me.Controls.Add(Me.AMI_Done)
@@ -172,6 +172,6 @@ Partial Class Add_Material_invoice
     Friend WithEvents AMI_Done As System.Windows.Forms.Button
     Friend WithEvents AMI_Save_and_new As System.Windows.Forms.Button
     Friend WithEvents AMI_Job_Name As System.Windows.Forms.ComboBox
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents AMI_Date As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label5 As System.Windows.Forms.Label
 End Class

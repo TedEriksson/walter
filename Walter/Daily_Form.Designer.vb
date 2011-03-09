@@ -35,6 +35,7 @@ Partial Class Daily_Form
         Me.DF_Job = New System.Windows.Forms.ComboBox()
         Me.DF_Worker = New System.Windows.Forms.ComboBox()
         Me.DF_Date = New System.Windows.Forms.DateTimePicker()
+        Me.DF_SAN = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'DF_Task
@@ -54,7 +55,7 @@ Partial Class Daily_Form
         'NJ_Cancel
         '
         Me.NJ_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.NJ_Cancel.Location = New System.Drawing.Point(260, 171)
+        Me.NJ_Cancel.Location = New System.Drawing.Point(268, 171)
         Me.NJ_Cancel.Name = "NJ_Cancel"
         Me.NJ_Cancel.Size = New System.Drawing.Size(75, 23)
         Me.NJ_Cancel.TabIndex = 22
@@ -63,7 +64,7 @@ Partial Class Daily_Form
         '
         'NJ_Done
         '
-        Me.NJ_Done.Location = New System.Drawing.Point(179, 171)
+        Me.NJ_Done.Location = New System.Drawing.Point(187, 171)
         Me.NJ_Done.Name = "NJ_Done"
         Me.NJ_Done.Size = New System.Drawing.Size(75, 23)
         Me.NJ_Done.TabIndex = 21
@@ -145,8 +146,17 @@ Partial Class Daily_Form
         Me.DF_Date.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DF_Date.Location = New System.Drawing.Point(116, 119)
         Me.DF_Date.Name = "DF_Date"
-        Me.DF_Date.Size = New System.Drawing.Size(200, 20)
+        Me.DF_Date.Size = New System.Drawing.Size(227, 20)
         Me.DF_Date.TabIndex = 31
+        '
+        'DF_SAN
+        '
+        Me.DF_SAN.Location = New System.Drawing.Point(93, 171)
+        Me.DF_SAN.Name = "DF_SAN"
+        Me.DF_SAN.Size = New System.Drawing.Size(88, 23)
+        Me.DF_SAN.TabIndex = 32
+        Me.DF_SAN.Text = "Save and New"
+        Me.DF_SAN.UseVisualStyleBackColor = True
         '
         'Daily_Form
         '
@@ -154,6 +164,7 @@ Partial Class Daily_Form
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.NJ_Cancel
         Me.ClientSize = New System.Drawing.Size(356, 202)
+        Me.Controls.Add(Me.DF_SAN)
         Me.Controls.Add(Me.DF_Date)
         Me.Controls.Add(Me.DF_Worker)
         Me.Controls.Add(Me.DF_Job)
@@ -186,4 +197,5 @@ Partial Class Daily_Form
     Friend WithEvents DF_Job As System.Windows.Forms.ComboBox
     Friend WithEvents DF_Worker As System.Windows.Forms.ComboBox
     Friend WithEvents DF_Date As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DF_SAN As System.Windows.Forms.Button
 End Class

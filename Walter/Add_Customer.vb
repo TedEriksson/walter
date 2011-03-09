@@ -8,4 +8,9 @@ Public Class Add_Customer
         NewJob.Enabled = True
         Me.Close()
     End Sub
+
+    Private Sub NJ_Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NJ_Cancel.Click
+        NewJob.Enabled = True
+        Me.Visible = False
+    End Sub
 End Class

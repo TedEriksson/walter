@@ -21,4 +21,9 @@ Public Class Daily_Form
         MainMenu.Visible = True
         Me.Visible = False
     End Sub
+
+    Private Sub DF_SAN_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DF_SAN.Click
+        DF_Date.CustomFormat = "dd/MM/yyyy"
+        SQLWriting("INSERT INTO Workers_Hours(WorkerID, JobID, Date_worked, Hours_worked, Task) VALUES('" & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + DF_Worker.Text + "'") & "'," & SQLReading("SELECT JobID FROM Jobs WHERE Job_Name = '" + DF_Job.Text + "'") & ",'" + DF_Date.Text + "','" + DF_Hours_worked.Text + "', '" + DF_Task.Text + "')")
+    End Sub
 End Class

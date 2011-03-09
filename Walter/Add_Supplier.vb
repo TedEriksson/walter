@@ -8,4 +8,8 @@ Public Class Add_Supplier
         Me.Close()
     End Sub
 
+    Private Sub AS_Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AS_Cancel.Click
+        Add_Material_invoice.Enabled = True
+        Me.Visible = False
+    End Sub
 End Class
