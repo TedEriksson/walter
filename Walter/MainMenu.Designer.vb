@@ -26,11 +26,11 @@ Partial Class MainMenu
         Me.M_Results = New System.Windows.Forms.Button()
         Me.M_EditDetails = New System.Windows.Forms.Button()
         Me.M_Quit = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Worker_hours = New System.Windows.Forms.Button()
         Me.Material_invoice = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -70,19 +70,6 @@ Partial Class MainMenu
         Me.M_Quit.Text = "Quit"
         Me.M_Quit.UseVisualStyleBackColor = True
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PictureBox1.Image = Global.Walter.My.Resources.Resources.walter
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(237, 58)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 8
-        Me.PictureBox1.TabStop = False
-        '
         'Worker_hours
         '
         Me.Worker_hours.Location = New System.Drawing.Point(12, 88)
@@ -119,17 +106,27 @@ Partial Class MainMenu
         Me.Label2.TabIndex = 12
         Me.Label2.Text = "Other Tools:"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Walter.My.Resources.Resources.walter1
+        Me.PictureBox1.Location = New System.Drawing.Point(-1, 1)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(241, 63)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.TabStop = False
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(237, 210)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Material_invoice)
         Me.Controls.Add(Me.Worker_hours)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.M_Quit)
         Me.Controls.Add(Me.M_EditDetails)
         Me.Controls.Add(Me.M_Results)
@@ -148,10 +145,10 @@ Partial Class MainMenu
     Friend WithEvents M_Results As System.Windows.Forms.Button
     Friend WithEvents M_EditDetails As System.Windows.Forms.Button
     Friend WithEvents M_Quit As System.Windows.Forms.Button
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Worker_hours As System.Windows.Forms.Button
     Friend WithEvents Material_invoice As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 
 End Class
