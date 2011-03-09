@@ -87,9 +87,76 @@ Public Class Edit_Details
     End Sub
 
 
-    'edit details of customer'
+    'Edit Details of Customer'
+
+    Private Sub EDC_Customer_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles EDC_Customer.GotFocus
+        Populate_ComboBox(EDC_Customer, "SELECT Customer_Name FROM Customer")
+    End Sub
+
+    Private Sub EDC_Customer_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles EDC_Customer.SelectedIndexChanged
+        'Special Populating SQL Query'
+        Dim myConnection As New OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=" & Application.StartupPath & "\..\..\walter_database.mdb")
+        Dim mySelectQuery As String = "SELECT * FROM Customer WHERE Customer_Name = '" + EDC_Customer.Text + "'"
+        Dim myCommand As New OleDbCommand(mySelectQuery, myConnection)
+        myConnection.Open()
+        Dim myReader As OleDbDataReader
+        myReader = myCommand.ExecuteReader()
+        While myReader.Read()
+            EDC_Customer_Name.Text = myReader.GetString(1)
+            EDC_A1.Text = myReader.GetValue(2)
+            EDC_A2.Text = myReader.GetValue(3)
+            EDC_P.Text = myReader.GetString(4)
+        End While
+        myReader.Close()
+        myConnection.Close()
+        'End of Special Query'
+    End Sub
+
+    Private Sub EDC_Done_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles EDC_Done.Click
+        Dim dlgRes As DialogResult
+        dlgRes = MessageBox.Show("Are you Sure you want to change this Record?", "Edit Details of Job", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If dlgRes = DialogResult.Yes Then
+            SQLWriting("UPDATE Customer SET Customer_Name = '" + EDC_Customer_Name.Text + "', Address1 = '" + EDC_A1.Text + "', Address2 = '" + EDC_A2.Text + "', Postcode = '" + EDC_P.Text + "' WHERE CustomerID = " & SQLReading("SELECT CustomerID FROM Customer WHERE Customer_Name = '" + EDC_Customer.Text + "'"))
+            MainMenu.Visible = True
+            Me.Close()
+        End If
+    End Sub
 
 
+    'edit details of Supplier'
+    Private Sub EDS_Supplier_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles EDS_Supplier.GotFocus
+        Populate_ComboBox(EDS_Supplier, "SELECT Supplier_Name FROM Supplier")
+    End Sub
+
+    Private Sub EDS_Supplier_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles EDS_Supplier.SelectedIndexChanged
+        'Special Populating SQL Query'
+        Dim myConnection As New OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=" & Application.StartupPath & "\..\..\walter_database.mdb")
+        Dim mySelectQuery As String = "SELECT * FROM Supplier WHERE Supplier_Name = '" + EDS_Supplier.Text + "'"
+        Dim myCommand As New OleDbCommand(mySelectQuery, myConnection)
+        myConnection.Open()
+        Dim myReader As OleDbDataReader
+        myReader = myCommand.ExecuteReader()
+        While myReader.Read()
+            EDS_SN.Text = myReader.GetString(1)
+            EDS_A1.Text = myReader.GetValue(2)
+            EDS_A2.Text = myReader.GetValue(3)
+            EDS_P.Text = myReader.GetString(4)
+        End While
+        myReader.Close()
+        myConnection.Close()
+        'End of Special Query'
+    End Sub
+
+
+    Private Sub EDS_Done_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles EDS_Done.Click
+        Dim dlgRes As DialogResult
+        dlgRes = MessageBox.Show("Are you Sure you want to change this Record?", "Edit Details of Job", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If dlgRes = DialogResult.Yes Then
+            SQLWriting("UPDATE Supplier SET Supplier_Name = '" + EDS_SN.Text + "', Address1 = '" + EDS_A1.Text + "', Address2 = '" + EDS_A2.Text + "', Postcode = '" + EDS_P.Text + "' WHERE SupplierID = " & SQLReading("SELECT SupplierID FROM Supplier WHERE Supplier_Name = '" + EDS_SN.Text + "'"))
+            MainMenu.Visible = True
+            Me.Close()
+        End If
+    End Sub
 End Class
 
 

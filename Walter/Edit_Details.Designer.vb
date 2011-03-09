@@ -56,24 +56,24 @@ Partial Class Edit_Details
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.EDC_Customer = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.EDC_P = New System.Windows.Forms.TextBox()
+        Me.EDC_A2 = New System.Windows.Forms.TextBox()
+        Me.EDC_A1 = New System.Windows.Forms.TextBox()
+        Me.EDC_Customer_Name = New System.Windows.Forms.TextBox()
         Me.EDC_Cancel = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.EDC_Done = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.EDS_Supplier = New System.Windows.Forms.ComboBox()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.EDS_P = New System.Windows.Forms.TextBox()
+        Me.EDS_A2 = New System.Windows.Forms.TextBox()
+        Me.EDS_A1 = New System.Windows.Forms.TextBox()
+        Me.EDS_SN = New System.Windows.Forms.TextBox()
         Me.EDS_Cancel = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.EDS_Done = New System.Windows.Forms.Button()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
@@ -382,12 +382,12 @@ Partial Class Edit_Details
         Me.TabPage3.BackColor = System.Drawing.SystemColors.Control
         Me.TabPage3.Controls.Add(Me.EDC_Customer)
         Me.TabPage3.Controls.Add(Me.Label10)
-        Me.TabPage3.Controls.Add(Me.TextBox5)
-        Me.TabPage3.Controls.Add(Me.TextBox9)
-        Me.TabPage3.Controls.Add(Me.TextBox10)
-        Me.TabPage3.Controls.Add(Me.TextBox11)
+        Me.TabPage3.Controls.Add(Me.EDC_P)
+        Me.TabPage3.Controls.Add(Me.EDC_A2)
+        Me.TabPage3.Controls.Add(Me.EDC_A1)
+        Me.TabPage3.Controls.Add(Me.EDC_Customer_Name)
         Me.TabPage3.Controls.Add(Me.EDC_Cancel)
-        Me.TabPage3.Controls.Add(Me.Button4)
+        Me.TabPage3.Controls.Add(Me.EDC_Done)
         Me.TabPage3.Controls.Add(Me.Label13)
         Me.TabPage3.Controls.Add(Me.Label14)
         Me.TabPage3.Controls.Add(Me.Label15)
@@ -414,33 +414,33 @@ Partial Class Edit_Details
         Me.Label10.TabIndex = 54
         Me.Label10.Text = "Customer:"
         '
-        'TextBox5
+        'EDC_P
         '
-        Me.TextBox5.Location = New System.Drawing.Point(113, 116)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox5.TabIndex = 53
+        Me.EDC_P.Location = New System.Drawing.Point(113, 116)
+        Me.EDC_P.Name = "EDC_P"
+        Me.EDC_P.Size = New System.Drawing.Size(181, 20)
+        Me.EDC_P.TabIndex = 53
         '
-        'TextBox9
+        'EDC_A2
         '
-        Me.TextBox9.Location = New System.Drawing.Point(113, 90)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox9.TabIndex = 52
+        Me.EDC_A2.Location = New System.Drawing.Point(113, 90)
+        Me.EDC_A2.Name = "EDC_A2"
+        Me.EDC_A2.Size = New System.Drawing.Size(181, 20)
+        Me.EDC_A2.TabIndex = 52
         '
-        'TextBox10
+        'EDC_A1
         '
-        Me.TextBox10.Location = New System.Drawing.Point(113, 64)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox10.TabIndex = 51
+        Me.EDC_A1.Location = New System.Drawing.Point(113, 64)
+        Me.EDC_A1.Name = "EDC_A1"
+        Me.EDC_A1.Size = New System.Drawing.Size(181, 20)
+        Me.EDC_A1.TabIndex = 51
         '
-        'TextBox11
+        'EDC_Customer_Name
         '
-        Me.TextBox11.Location = New System.Drawing.Point(113, 38)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox11.TabIndex = 50
+        Me.EDC_Customer_Name.Location = New System.Drawing.Point(113, 38)
+        Me.EDC_Customer_Name.Name = "EDC_Customer_Name"
+        Me.EDC_Customer_Name.Size = New System.Drawing.Size(181, 20)
+        Me.EDC_Customer_Name.TabIndex = 50
         '
         'EDC_Cancel
         '
@@ -452,14 +452,14 @@ Partial Class Edit_Details
         Me.EDC_Cancel.Text = "Cancel"
         Me.EDC_Cancel.UseVisualStyleBackColor = True
         '
-        'Button4
+        'EDC_Done
         '
-        Me.Button4.Location = New System.Drawing.Point(138, 200)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 48
-        Me.Button4.Text = "Done"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.EDC_Done.Location = New System.Drawing.Point(138, 200)
+        Me.EDC_Done.Name = "EDC_Done"
+        Me.EDC_Done.Size = New System.Drawing.Size(75, 23)
+        Me.EDC_Done.TabIndex = 48
+        Me.EDC_Done.Text = "Done"
+        Me.EDC_Done.UseVisualStyleBackColor = True
         '
         'Label13
         '
@@ -491,14 +491,14 @@ Partial Class Edit_Details
         'TabPage4
         '
         Me.TabPage4.BackColor = System.Drawing.SystemColors.Control
-        Me.TabPage4.Controls.Add(Me.ComboBox4)
+        Me.TabPage4.Controls.Add(Me.EDS_Supplier)
         Me.TabPage4.Controls.Add(Me.Label16)
-        Me.TabPage4.Controls.Add(Me.TextBox12)
-        Me.TabPage4.Controls.Add(Me.TextBox13)
-        Me.TabPage4.Controls.Add(Me.TextBox14)
-        Me.TabPage4.Controls.Add(Me.TextBox15)
+        Me.TabPage4.Controls.Add(Me.EDS_P)
+        Me.TabPage4.Controls.Add(Me.EDS_A2)
+        Me.TabPage4.Controls.Add(Me.EDS_A1)
+        Me.TabPage4.Controls.Add(Me.EDS_SN)
         Me.TabPage4.Controls.Add(Me.EDS_Cancel)
-        Me.TabPage4.Controls.Add(Me.Button6)
+        Me.TabPage4.Controls.Add(Me.EDS_Done)
         Me.TabPage4.Controls.Add(Me.Label17)
         Me.TabPage4.Controls.Add(Me.Label18)
         Me.TabPage4.Controls.Add(Me.Label19)
@@ -508,13 +508,13 @@ Partial Class Edit_Details
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Supplier"
         '
-        'ComboBox4
+        'EDS_Supplier
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(113, 11)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(181, 21)
-        Me.ComboBox4.TabIndex = 55
+        Me.EDS_Supplier.FormattingEnabled = True
+        Me.EDS_Supplier.Location = New System.Drawing.Point(113, 11)
+        Me.EDS_Supplier.Name = "EDS_Supplier"
+        Me.EDS_Supplier.Size = New System.Drawing.Size(181, 21)
+        Me.EDS_Supplier.TabIndex = 55
         '
         'Label16
         '
@@ -525,33 +525,33 @@ Partial Class Edit_Details
         Me.Label16.TabIndex = 54
         Me.Label16.Text = "Supplier:"
         '
-        'TextBox12
+        'EDS_P
         '
-        Me.TextBox12.Location = New System.Drawing.Point(113, 116)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox12.TabIndex = 53
+        Me.EDS_P.Location = New System.Drawing.Point(113, 116)
+        Me.EDS_P.Name = "EDS_P"
+        Me.EDS_P.Size = New System.Drawing.Size(181, 20)
+        Me.EDS_P.TabIndex = 53
         '
-        'TextBox13
+        'EDS_A2
         '
-        Me.TextBox13.Location = New System.Drawing.Point(113, 90)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox13.TabIndex = 52
+        Me.EDS_A2.Location = New System.Drawing.Point(113, 90)
+        Me.EDS_A2.Name = "EDS_A2"
+        Me.EDS_A2.Size = New System.Drawing.Size(181, 20)
+        Me.EDS_A2.TabIndex = 52
         '
-        'TextBox14
+        'EDS_A1
         '
-        Me.TextBox14.Location = New System.Drawing.Point(113, 64)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox14.TabIndex = 51
+        Me.EDS_A1.Location = New System.Drawing.Point(113, 64)
+        Me.EDS_A1.Name = "EDS_A1"
+        Me.EDS_A1.Size = New System.Drawing.Size(181, 20)
+        Me.EDS_A1.TabIndex = 51
         '
-        'TextBox15
+        'EDS_SN
         '
-        Me.TextBox15.Location = New System.Drawing.Point(113, 38)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox15.TabIndex = 50
+        Me.EDS_SN.Location = New System.Drawing.Point(113, 38)
+        Me.EDS_SN.Name = "EDS_SN"
+        Me.EDS_SN.Size = New System.Drawing.Size(181, 20)
+        Me.EDS_SN.TabIndex = 50
         '
         'EDS_Cancel
         '
@@ -563,14 +563,14 @@ Partial Class Edit_Details
         Me.EDS_Cancel.Text = "Cancel"
         Me.EDS_Cancel.UseVisualStyleBackColor = True
         '
-        'Button6
+        'EDS_Done
         '
-        Me.Button6.Location = New System.Drawing.Point(138, 200)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 48
-        Me.Button6.Text = "Done"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.EDS_Done.Location = New System.Drawing.Point(138, 200)
+        Me.EDS_Done.Name = "EDS_Done"
+        Me.EDS_Done.Size = New System.Drawing.Size(75, 23)
+        Me.EDS_Done.TabIndex = 48
+        Me.EDS_Done.Text = "Done"
+        Me.EDS_Done.UseVisualStyleBackColor = True
         '
         'Label17
         '
@@ -655,23 +655,23 @@ Partial Class Edit_Details
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents EDC_Customer As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
+    Friend WithEvents EDC_P As System.Windows.Forms.TextBox
+    Friend WithEvents EDC_A2 As System.Windows.Forms.TextBox
+    Friend WithEvents EDC_A1 As System.Windows.Forms.TextBox
+    Friend WithEvents EDC_Customer_Name As System.Windows.Forms.TextBox
     Friend WithEvents EDC_Cancel As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents EDC_Done As System.Windows.Forms.Button
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
+    Friend WithEvents EDS_Supplier As System.Windows.Forms.ComboBox
     Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox15 As System.Windows.Forms.TextBox
+    Friend WithEvents EDS_P As System.Windows.Forms.TextBox
+    Friend WithEvents EDS_A2 As System.Windows.Forms.TextBox
+    Friend WithEvents EDS_A1 As System.Windows.Forms.TextBox
+    Friend WithEvents EDS_SN As System.Windows.Forms.TextBox
     Friend WithEvents EDS_Cancel As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents EDS_Done As System.Windows.Forms.Button
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Label19 As System.Windows.Forms.Label
