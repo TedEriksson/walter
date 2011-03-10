@@ -1,6 +1,10 @@
-﻿Public Class MainMenu
+﻿Imports System.Data.OleDb
+
+Public Class MainMenu
+
 
     Private Sub M_Quit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles M_Quit.Click
+        walterDbConnection.Close()
         Application.Exit()
     End Sub
 
@@ -22,5 +26,13 @@
     Private Sub M_EditDetails_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles M_EditDetails.Click
         Edit_Details.Visible = True
         Me.Visible = False
+    End Sub
+
+    Private Sub MainMenu_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Try
+            walterDbConnection.Open()
+        Catch exc As Exception
+            MsgBox("Shit just got real: " + exc.Message)
+        End Try
     End Sub
 End Class

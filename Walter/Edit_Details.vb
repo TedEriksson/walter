@@ -4,6 +4,7 @@ Public Class Edit_Details
     Private Sub EDS_Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EDS_Cancel.Click, EDC_Cancel.Click, EDW_Cancel.Click, EDJ_Cancel.Click
         MainMenu.Visible = True
         Me.Visible = False
+        'WalterDAL.
     End Sub
 
 

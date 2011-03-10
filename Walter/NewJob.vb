@@ -1,10 +1,12 @@
-﻿Imports System.Data.OleDb, Walter.SQLStuff
+﻿Imports System.Data.OleDb
 
 Public Class NewJob
 
     Private Sub NJ_Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NJ_Cancel.Click
         MainMenu.Visible = True
         Me.Visible = False
+
+
     End Sub
 
     Private Sub NJ_Done_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NJ_Done.Click
