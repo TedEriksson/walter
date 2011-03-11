@@ -32,7 +32,13 @@ Public Class MainMenu
         Try
             walterDbConnection.Open()
         Catch exc As Exception
-            MsgBox("Shit just got real: " + exc.Message)
+            MsgBox("Database cannot be found, you should probs tell Ted.. Error: " + exc.Message, MsgBoxStyle.Critical)
+            Application.Exit()
         End Try
+    End Sub
+
+    Private Sub Payments_button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Payments_button.Click
+        Payments.Visible = True
+        Me.Visible = False
     End Sub
 End Class

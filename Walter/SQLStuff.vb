@@ -20,7 +20,6 @@ Module SQLStuff
     End Sub
 
     Public Function SQLReading(ByVal mySelectQuery)
-
         Dim varread As Object
         walterDbCommand = New OleDbCommand(mySelectQuery, walterDbConnection)
         Dim myReader As OleDbDataReader
@@ -30,15 +29,12 @@ Module SQLStuff
             varread = myReader.GetValue(0)
         End While
         myReader.Close()
-
         Return varread
     End Function
 
     Public Sub SQLWriting(ByVal sql)
-
         walterDbCommand = New OleDbCommand(sql, walterDbConnection)
         walterDbCommand.ExecuteNonQuery()
-
         MsgBox("Success!")
     End Sub
 End Module

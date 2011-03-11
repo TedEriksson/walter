@@ -31,6 +31,7 @@ Partial Class MainMenu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Payments_button = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -63,7 +64,7 @@ Partial Class MainMenu
         '
         'M_Quit
         '
-        Me.M_Quit.Location = New System.Drawing.Point(150, 175)
+        Me.M_Quit.Location = New System.Drawing.Point(150, 204)
         Me.M_Quit.Name = "M_Quit"
         Me.M_Quit.Size = New System.Drawing.Size(75, 23)
         Me.M_Quit.TabIndex = 5
@@ -116,12 +117,22 @@ Partial Class MainMenu
         Me.PictureBox1.TabIndex = 13
         Me.PictureBox1.TabStop = False
         '
+        'Payments_button
+        '
+        Me.Payments_button.Location = New System.Drawing.Point(150, 175)
+        Me.Payments_button.Name = "Payments_button"
+        Me.Payments_button.Size = New System.Drawing.Size(75, 23)
+        Me.Payments_button.TabIndex = 14
+        Me.Payments_button.Text = "Payments"
+        Me.Payments_button.UseVisualStyleBackColor = True
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(237, 210)
+        Me.ClientSize = New System.Drawing.Size(237, 237)
+        Me.Controls.Add(Me.Payments_button)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -150,5 +161,6 @@ Partial Class MainMenu
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Payments_button As System.Windows.Forms.Button
 
 End Class
