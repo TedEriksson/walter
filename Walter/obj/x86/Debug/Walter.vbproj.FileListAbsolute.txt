@@ -53,3 +53,5 @@ F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Splash.resourc
 F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.read.1.tlog
 F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.write.1.tlog
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Payments.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Job_Status.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Results.resources

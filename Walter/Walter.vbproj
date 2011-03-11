@@ -104,6 +104,12 @@
     <Compile Include="Edit_Details.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Job_Status.Designer.vb">
+      <DependentUpon>Job_Status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Job_Status.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,12 @@
     <Compile Include="Payments.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Results.Designer.vb">
+      <DependentUpon>Results.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Results.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Splash.Designer.vb">
       <DependentUpon>Splash.vb</DependentUpon>
     </Compile>
@@ -162,6 +174,9 @@
     <EmbeddedResource Include="Edit_Details.resx">
       <DependentUpon>Edit_Details.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Job_Status.resx">
+      <DependentUpon>Job_Status.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Payments.resx">
       <DependentUpon>Payments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Results.resx">
+      <DependentUpon>Results.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.vb</DependentUpon>

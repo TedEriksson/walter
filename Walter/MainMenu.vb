@@ -41,4 +41,9 @@ Public Class MainMenu
         Payments.Visible = True
         Me.Visible = False
     End Sub
+
+    Private Sub M_Results_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles M_Results.Click
+        Results.Visible = True
+        Me.Visible = False
+    End Sub
 End Class
