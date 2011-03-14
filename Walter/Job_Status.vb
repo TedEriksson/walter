@@ -6,8 +6,10 @@
 
 
     Private Sub JS_Job_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles JS_Job.SelectedIndexChanged
-        Dim varincome As Integer
+        Dim varincome, varoutput, vartotal As Integer
         varincome = 0
+        varoutput = 0
+        vartotal = 0
         Try
             varincome = SQLReading("SELECT SUM(Amount) FROM Payments_Made WHERE JobID = " & SQLReading("SELECT JobID From Jobs WHERE Job_Name = '" + JS_Job.Text + "'"))
         Catch ex As InvalidCastException
@@ -15,5 +17,8 @@
         End Try
         JS_I.Text = "£" & varincome
 
+
     End Sub
+
+
 End Class
