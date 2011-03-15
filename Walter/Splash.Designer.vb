@@ -28,10 +28,11 @@ Partial Class Splash
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Silver
         Me.PictureBox1.Image = Global.Walter.My.Resources.Resources.walter_spalshhs
         Me.PictureBox1.Location = New System.Drawing.Point(-1, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(628, 235)
+        Me.PictureBox1.Size = New System.Drawing.Size(601, 212)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -41,7 +42,7 @@ Partial Class Splash
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Maroon
-        Me.ClientSize = New System.Drawing.Size(627, 235)
+        Me.ClientSize = New System.Drawing.Size(601, 213)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Splash"
