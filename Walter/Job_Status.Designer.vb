@@ -30,6 +30,7 @@ Partial Class Job_Status
         Me.JS_T = New System.Windows.Forms.Label()
         Me.JS_O = New System.Windows.Forms.Label()
         Me.JS_I = New System.Windows.Forms.Label()
+        Me.JS_Done = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'JS_Job
@@ -52,7 +53,7 @@ Partial Class Job_Status
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 69)
+        Me.Label1.Location = New System.Drawing.Point(12, 57)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(45, 13)
         Me.Label1.TabIndex = 31
@@ -61,7 +62,7 @@ Partial Class Job_Status
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 102)
+        Me.Label3.Location = New System.Drawing.Point(12, 90)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(58, 13)
         Me.Label3.TabIndex = 32
@@ -70,7 +71,7 @@ Partial Class Job_Status
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 145)
+        Me.Label4.Location = New System.Drawing.Point(12, 133)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(34, 13)
         Me.Label4.TabIndex = 33
@@ -79,7 +80,7 @@ Partial Class Job_Status
         'JS_T
         '
         Me.JS_T.AutoSize = True
-        Me.JS_T.Location = New System.Drawing.Point(113, 145)
+        Me.JS_T.Location = New System.Drawing.Point(113, 133)
         Me.JS_T.Name = "JS_T"
         Me.JS_T.Size = New System.Drawing.Size(0, 13)
         Me.JS_T.TabIndex = 36
@@ -87,7 +88,7 @@ Partial Class Job_Status
         'JS_O
         '
         Me.JS_O.AutoSize = True
-        Me.JS_O.Location = New System.Drawing.Point(113, 102)
+        Me.JS_O.Location = New System.Drawing.Point(113, 90)
         Me.JS_O.Name = "JS_O"
         Me.JS_O.Size = New System.Drawing.Size(0, 13)
         Me.JS_O.TabIndex = 35
@@ -95,16 +96,28 @@ Partial Class Job_Status
         'JS_I
         '
         Me.JS_I.AutoSize = True
-        Me.JS_I.Location = New System.Drawing.Point(113, 69)
+        Me.JS_I.Location = New System.Drawing.Point(113, 57)
         Me.JS_I.Name = "JS_I"
         Me.JS_I.Size = New System.Drawing.Size(0, 13)
         Me.JS_I.TabIndex = 34
+        '
+        'JS_Done
+        '
+        Me.JS_Done.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.JS_Done.Location = New System.Drawing.Point(258, 165)
+        Me.JS_Done.Name = "JS_Done"
+        Me.JS_Done.Size = New System.Drawing.Size(75, 23)
+        Me.JS_Done.TabIndex = 37
+        Me.JS_Done.Text = "Done"
+        Me.JS_Done.UseVisualStyleBackColor = True
         '
         'Job_Status
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(345, 198)
+        Me.CancelButton = Me.JS_Done
+        Me.ClientSize = New System.Drawing.Size(345, 200)
+        Me.Controls.Add(Me.JS_Done)
         Me.Controls.Add(Me.JS_T)
         Me.Controls.Add(Me.JS_O)
         Me.Controls.Add(Me.JS_I)
@@ -114,7 +127,7 @@ Partial Class Job_Status
         Me.Controls.Add(Me.JS_Job)
         Me.Controls.Add(Me.Label2)
         Me.Name = "Job_Status"
-        Me.Text = "Job_Status"
+        Me.Text = "Job Status"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -127,4 +140,5 @@ Partial Class Job_Status
     Friend WithEvents JS_T As System.Windows.Forms.Label
     Friend WithEvents JS_O As System.Windows.Forms.Label
     Friend WithEvents JS_I As System.Windows.Forms.Label
+    Friend WithEvents JS_Done As System.Windows.Forms.Button
 End Class
