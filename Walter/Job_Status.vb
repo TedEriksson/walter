@@ -33,7 +33,11 @@
             varoutput = varoutput + (hr * hw)
             i = i + 1
         Loop
-        JS_O.Text = "£" & varoutput
+        Try
+            varoutput = varoutput + SQLReading("SELECT SUM(Cost) FROM supplier_outgoings WHERE JobID = " & SQLReading("SELECT JobID From Jobs WHERE Job_Name = '" + jobname + "'"))
+        Catch ex As Exception
+        End Try
+                JS_O.Text = "£" & varoutput
         JS_T.Text = "£" & (varincome - varoutput)
     End Sub
 

@@ -35,6 +35,8 @@ Public Class MainMenu
             MsgBox("Database cannot be found, you should probs tell Ted.. Error: " + exc.Message, MsgBoxStyle.Critical)
             Application.Exit()
         End Try
+        Login.Visible = True
+        Me.Enabled = False
     End Sub
 
     Private Sub Payments_button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Payments_button.Click

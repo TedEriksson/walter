@@ -22,73 +22,67 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.WalterStart = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.L_P = New System.Windows.Forms.TextBox()
+        Me.Quit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'WalterStart
         '
-        Me.Button1.Location = New System.Drawing.Point(101, 174)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(49, 70)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(32, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "User:"
+        Me.WalterStart.Location = New System.Drawing.Point(112, 38)
+        Me.WalterStart.Name = "WalterStart"
+        Me.WalterStart.Size = New System.Drawing.Size(75, 23)
+        Me.WalterStart.TabIndex = 0
+        Me.WalterStart.Text = "Start Walter"
+        Me.WalterStart.UseVisualStyleBackColor = True
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(25, 116)
+        Me.Label2.Location = New System.Drawing.Point(11, 15)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(56, 13)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Password:"
         '
-        'TextBox1
+        'L_P
         '
-        Me.TextBox1.Location = New System.Drawing.Point(101, 67)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.L_P.Location = New System.Drawing.Point(87, 12)
+        Me.L_P.Name = "L_P"
+        Me.L_P.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.L_P.Size = New System.Drawing.Size(100, 20)
+        Me.L_P.TabIndex = 4
+        Me.L_P.Text = "Admin"
         '
-        'TextBox2
+        'Quit
         '
-        Me.TextBox2.Location = New System.Drawing.Point(101, 113)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.Quit.Location = New System.Drawing.Point(14, 38)
+        Me.Quit.Name = "Quit"
+        Me.Quit.Size = New System.Drawing.Size(75, 23)
+        Me.Quit.TabIndex = 5
+        Me.Quit.Text = "Quit"
+        Me.Quit.UseVisualStyleBackColor = True
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(202, 71)
+        Me.Controls.Add(Me.Quit)
+        Me.Controls.Add(Me.L_P)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.WalterStart)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents WalterStart As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents L_P As System.Windows.Forms.TextBox
+    Friend WithEvents Quit As System.Windows.Forms.Button
 End Class
