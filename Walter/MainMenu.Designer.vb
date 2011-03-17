@@ -32,6 +32,7 @@ Partial Class MainMenu
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Payments_button = New System.Windows.Forms.Button()
+        Me.M_Invoices = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -126,12 +127,22 @@ Partial Class MainMenu
         Me.Payments_button.Text = "Payments"
         Me.Payments_button.UseVisualStyleBackColor = True
         '
+        'M_Invoices
+        '
+        Me.M_Invoices.Location = New System.Drawing.Point(12, 204)
+        Me.M_Invoices.Name = "M_Invoices"
+        Me.M_Invoices.Size = New System.Drawing.Size(110, 23)
+        Me.M_Invoices.TabIndex = 15
+        Me.M_Invoices.Text = "Invoices"
+        Me.M_Invoices.UseVisualStyleBackColor = True
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(237, 237)
+        Me.ClientSize = New System.Drawing.Size(237, 241)
+        Me.Controls.Add(Me.M_Invoices)
         Me.Controls.Add(Me.Payments_button)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
@@ -162,5 +173,6 @@ Partial Class MainMenu
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Payments_button As System.Windows.Forms.Button
+    Friend WithEvents M_Invoices As System.Windows.Forms.Button
 
 End Class

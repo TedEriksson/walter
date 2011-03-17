@@ -48,4 +48,9 @@ Public Class MainMenu
         Job_Status.Visible = True
         Me.Visible = False
     End Sub
+
+    Private Sub M_Invoices_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles M_Invoices.Click
+        Invoices.Visible = True
+        Me.Visible = False
+    End Sub
 End Class
