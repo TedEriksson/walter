@@ -59,3 +59,4 @@ C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Payments.resources
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Login.resources
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Login.resources
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Invoices.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Invoices.resources

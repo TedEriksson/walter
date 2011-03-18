@@ -27,6 +27,9 @@ Partial Class Invoices
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.I_Back = New System.Windows.Forms.Button()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'I_Type
@@ -67,18 +70,46 @@ Partial Class Invoices
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(342, 22)
+        Me.Button1.Location = New System.Drawing.Point(180, 80)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Go"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'I_Back
+        '
+        Me.I_Back.Location = New System.Drawing.Point(261, 80)
+        Me.I_Back.Name = "I_Back"
+        Me.I_Back.Size = New System.Drawing.Size(75, 23)
+        Me.I_Back.TabIndex = 5
+        Me.I_Back.Text = "Back"
+        Me.I_Back.UseVisualStyleBackColor = True
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(140, 54)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(196, 20)
+        Me.DateTimePicker1.TabIndex = 6
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(42, 56)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(92, 13)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Select Upto Date:"
+        '
         'Invoices
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(429, 55)
+        Me.ClientSize = New System.Drawing.Size(348, 113)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.I_Back)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -95,4 +126,7 @@ Partial Class Invoices
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents I_Back As System.Windows.Forms.Button
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class
