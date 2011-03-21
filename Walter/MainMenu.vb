@@ -49,7 +49,12 @@ Public Class MainMenu
         Me.Visible = False
     End Sub
 
-    Private Sub M_Invoices_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles M_Invoices.Click
+    Private Sub M_Invoices_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles M_Options.Click
+        Options.Visible = True
+        Me.Visible = False
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Invoices.Visible = True
         Me.Visible = False
     End Sub

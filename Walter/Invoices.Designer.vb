@@ -35,7 +35,7 @@ Partial Class Invoices
         'I_Type
         '
         Me.I_Type.FormattingEnabled = True
-        Me.I_Type.Items.AddRange(New Object() {"Job", "Customer", "Worker", "Supplier"})
+        Me.I_Type.Items.AddRange(New Object() {"Job", "Worker", "Supplier"})
         Me.I_Type.Location = New System.Drawing.Point(12, 25)
         Me.I_Type.Name = "I_Type"
         Me.I_Type.Size = New System.Drawing.Size(121, 21)

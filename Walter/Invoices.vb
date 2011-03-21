@@ -6,7 +6,7 @@
         Else
             table = I_Type.Text
         End If
-        If I_Type.Text = "Job" Or I_Type.Text = "Worker" Or I_Type.Text = "Customer" Or I_Type.Text = "Supplier" Then Populate_ComboBox(I_N, "SELECT " + I_Type.Text + "_Name FROM " & table)
+        If I_Type.Text = "Job" Or I_Type.Text = "Worker" Or I_Type.Text = "Supplier" Then Populate_ComboBox(I_N, "SELECT " + I_Type.Text + "_Name FROM " & table)
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click

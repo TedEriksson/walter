@@ -1,20 +1,3 @@
-\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\bin\Debug\Walter.exe
-\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\bin\Debug\Walter.pdb
-\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\bin\Debug\Walter.xml
-\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\ResolveAssemblyReference.cache
-\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Resources.resources
-\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.read.1.tlog
-\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.write.1.tlog
-\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.exe
-\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.xml
-\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.pdb
-\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.MainMenu.resources
-\\s-grandprix\users\students\lewes\387864\visual studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.NewJob.resources
-\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Daily_Form.resources
-\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Material_invoice.resources
-\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Edit_Details.resources
-\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Customer.resources
-\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Splash.resources
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.exe
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.xml
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.pdb
@@ -33,7 +16,6 @@ C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Splash.resources
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Add_Supplier.resources
-\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Supplier.resources
 F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.exe
 F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.xml
 F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.pdb
@@ -52,11 +34,30 @@ F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.NewJob.resourc
 F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Splash.resources
 F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.read.1.tlog
 F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.write.1.tlog
-\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Payments.resources
-\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Job_Status.resources
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Job_Status.resources
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Payments.resources
-\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Login.resources
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Login.resources
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Invoices.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\ResolveAssemblyReference.cache
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Customer.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Material_invoice.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Supplier.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Daily_Form.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Edit_Details.resources
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Invoices.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Job_Status.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Login.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.MainMenu.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Resources.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.NewJob.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Options.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Payments.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Splash.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.read.1.tlog
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.write.1.tlog
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.exe
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.pdb
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.xml
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.exe
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.xml
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.pdb

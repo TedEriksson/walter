@@ -44,7 +44,7 @@ Partial Class Job_Status
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 16)
+        Me.Label2.Location = New System.Drawing.Point(43, 15)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(27, 13)
         Me.Label2.TabIndex = 29
@@ -53,7 +53,7 @@ Partial Class Job_Status
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 57)
+        Me.Label1.Location = New System.Drawing.Point(25, 57)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(45, 13)
         Me.Label1.TabIndex = 31
@@ -71,7 +71,7 @@ Partial Class Job_Status
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 133)
+        Me.Label4.Location = New System.Drawing.Point(36, 119)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(34, 13)
         Me.Label4.TabIndex = 33

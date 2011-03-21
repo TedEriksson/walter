@@ -32,7 +32,8 @@ Partial Class MainMenu
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Payments_button = New System.Windows.Forms.Button()
-        Me.M_Invoices = New System.Windows.Forms.Button()
+        Me.M_Options = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -51,7 +52,7 @@ Partial Class MainMenu
         Me.M_Results.Name = "M_Results"
         Me.M_Results.Size = New System.Drawing.Size(75, 23)
         Me.M_Results.TabIndex = 2
-        Me.M_Results.Text = "Results"
+        Me.M_Results.Text = "Job Status"
         Me.M_Results.UseVisualStyleBackColor = True
         '
         'M_EditDetails
@@ -65,7 +66,7 @@ Partial Class MainMenu
         '
         'M_Quit
         '
-        Me.M_Quit.Location = New System.Drawing.Point(150, 204)
+        Me.M_Quit.Location = New System.Drawing.Point(150, 233)
         Me.M_Quit.Name = "M_Quit"
         Me.M_Quit.Size = New System.Drawing.Size(75, 23)
         Me.M_Quit.TabIndex = 5
@@ -127,22 +128,32 @@ Partial Class MainMenu
         Me.Payments_button.Text = "Payments"
         Me.Payments_button.UseVisualStyleBackColor = True
         '
-        'M_Invoices
+        'M_Options
         '
-        Me.M_Invoices.Location = New System.Drawing.Point(12, 204)
-        Me.M_Invoices.Name = "M_Invoices"
-        Me.M_Invoices.Size = New System.Drawing.Size(110, 23)
-        Me.M_Invoices.TabIndex = 15
-        Me.M_Invoices.Text = "Invoices"
-        Me.M_Invoices.UseVisualStyleBackColor = True
+        Me.M_Options.Location = New System.Drawing.Point(12, 233)
+        Me.M_Options.Name = "M_Options"
+        Me.M_Options.Size = New System.Drawing.Size(110, 23)
+        Me.M_Options.TabIndex = 15
+        Me.M_Options.Text = "Options"
+        Me.M_Options.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(150, 204)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 16
+        Me.Button1.Text = "Invoices"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(237, 241)
-        Me.Controls.Add(Me.M_Invoices)
+        Me.ClientSize = New System.Drawing.Size(237, 266)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.M_Options)
         Me.Controls.Add(Me.Payments_button)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
@@ -173,6 +184,7 @@ Partial Class MainMenu
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Payments_button As System.Windows.Forms.Button
-    Friend WithEvents M_Invoices As System.Windows.Forms.Button
+    Friend WithEvents M_Options As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class
