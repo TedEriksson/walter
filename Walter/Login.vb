@@ -1,9 +1,7 @@
 ﻿Public Class Login
 
     Private Sub WalterStart_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles WalterStart.Click
-        Dim SystemPass As String
-        SystemPass = "Admin"
-        If L_P.Text = SystemPass Then
+        If L_P.Text = SQLReading("SELECT Pass FROM Options") Then
             MainMenu.Enabled = True
             Me.Close()
         Else
