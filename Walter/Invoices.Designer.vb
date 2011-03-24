@@ -84,6 +84,7 @@ Partial Class Invoices
         '
         'I_Date1
         '
+        Me.I_Date1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.I_Date1.Location = New System.Drawing.Point(53, 54)
         Me.I_Date1.Name = "I_Date1"
         Me.I_Date1.Size = New System.Drawing.Size(188, 20)
@@ -100,6 +101,7 @@ Partial Class Invoices
         '
         'I_Date2
         '
+        Me.I_Date2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.I_Date2.Location = New System.Drawing.Point(263, 54)
         Me.I_Date2.Name = "I_Date2"
         Me.I_Date2.Size = New System.Drawing.Size(186, 20)

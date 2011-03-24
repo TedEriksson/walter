@@ -71,14 +71,13 @@ Module SQLStuff
     End Function
 
     Public Function GetTableSupplier() As DataTable
-        'Invoices.I_Date1.CustomFormat = "dd/MM/yyyy"
-        'Invoices.I_Date2.CustomFormat = "dd/MM/yyyy"
         Dim myselectquery As String
         Dim table As New DataTable
         table.Columns.Add("Date", GetType(Date))
         table.Columns.Add("Job", GetType(String))
         table.Columns.Add("Cost", GetType(Integer))
-        myselectquery = "SELECT JobID, Cost, Date_of_invoice FROM supplier_outgoings WHERE SupplierID = " & SQLReading("SELECT SupplierID FROM Supplier WHERE Supplier_Name = '" + Invoices.I_N.Text + "' AND Date_of_invoice is >= " + Invoices.I_Date1.Text + " AND Date_of_invoice is <= " + Invoices.I_Date2.Text)
+        'Problem with date'
+        myselectquery = "SELECT JobID, Cost, Date_of_invoice FROM supplier_outgoings WHERE SupplierID = " & SQLReading("SELECT SupplierID FROM Supplier WHERE Supplier_Name = '" + Invoices.I_N.Text + "'") & " AND Date_of_invoice >= #" + Invoices.I_Date1.Text + "# AND Date_of_invoice <= #" + Invoices.I_Date2.Text + "#"
         walterDbCommand = New OleDbCommand(myselectquery, walterDbConnection)
         Dim myReader As OleDbDataReader
         Dim JobID As String
@@ -88,8 +87,8 @@ Module SQLStuff
             table.Rows.Add(myReader.GetValue(2), SQLReading("SELECT Job_Name FROM Jobs WHERE JobID = " + JobID), myReader.GetValue(1))
         End While
         myReader.Close()
-        Invoices.I_Total.Text = "£" & SQLReading("SELECT SUM(Cost) FROM supplier_outgoings WHERE SupplierID = " & SQLReading("SELECT SupplierID FROM Supplier WHERE Supplier_Name = '" + Invoices.I_N.Text + "'"))
-
+        'Problem with date'
+        Invoices.I_Total.Text = "£" & SQLReading("SELECT SUM(Cost) FROM supplier_outgoings WHERE SupplierID = " & SQLReading("SELECT SupplierID FROM Supplier WHERE Supplier_Name = '" + Invoices.I_N.Text + "'") & " AND Date_of_invoice <= " + Invoices.I_Date1.Text + " AND Date_of_invoice >= " + Invoices.I_Date2.Text)
         Return (table)
     End Function
 
