@@ -51,20 +51,25 @@ Module SQLStuff
         stringythingy = ""
     End Function
 
-    Public Function GetTable() As DataTable
+    Public Function GetTableWorker() As DataTable
         Dim myselectquery As String
+
         Dim table As New DataTable
+        table.Columns.Add("Date", GetType(Date))
         table.Columns.Add("Task", GetType(String))
         table.Columns.Add("Hours Worked", GetType(Integer))
-        myselectquery = "SELECT Task FROM Workers_hours WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")
+        table.Columns.Add("Pay (£)", GetType(Integer))
+        myselectquery = "SELECT Task, Hours_Worked, Date_Worked FROM Workers_hours WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")
         walterDbCommand = New OleDbCommand(myselectquery, walterDbConnection)
         Dim myReader As OleDbDataReader
         myReader = walterDbCommand.ExecuteReader()
         While myReader.Read()
-            table.Rows.Add(myReader.GetValue(0))
+            table.Rows.Add(myReader.GetValue(2), myReader.GetValue(0), myReader.GetValue(1), (myReader.GetValue(1) * SQLReading("SELECT Hourly_Rate FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")))
         End While
         myReader.Close()
-        Return table
+        Invoices.I_Total.Text = "£" & (SQLReading("SELECT Hourly_Rate FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'") * SQLReading("SELECT SUM(Hours_Worked) FROM Workers_hours WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")))
+
+        Return (table)
     End Function
 
     Public Sub SQLWriting(ByVal sql)
