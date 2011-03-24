@@ -32,28 +32,8 @@ Module SQLStuff
         Return varread
     End Function
 
-    Public Function CreateInvoice(ByVal mySelectQuery)
-        Dim stringythingy As String
-        stringythingy = ""
-        walterDbCommand = New OleDbCommand(mySelectQuery, walterDbConnection)
-        Dim myReader As OleDbDataReader
-        myReader = walterDbCommand.ExecuteReader()
-        While myReader.Read()
-            If stringythingy = "" Then
-                stringythingy = myReader.GetValue(0)
-            Else
-                stringythingy = stringythingy + ", " & myReader.GetValue(0)
-            End If
-        End While
-        myReader.Close()
-        mySelectQuery = vbNullString
-        Return stringythingy
-        stringythingy = ""
-    End Function
-
     Public Function GetTableWorker() As DataTable
         Dim myselectquery As String
-
         Dim table As New DataTable
         table.Columns.Add("Date", GetType(Date))
         table.Columns.Add("Task", GetType(String))
@@ -68,6 +48,47 @@ Module SQLStuff
         End While
         myReader.Close()
         Invoices.I_Total.Text = "£" & (SQLReading("SELECT Hourly_Rate FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'") * SQLReading("SELECT SUM(Hours_Worked) FROM Workers_hours WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")))
+        Return (table)
+    End Function
+
+    Public Function GetTableJob() As DataTable
+        Dim myselectquery As String
+        Dim table As New DataTable
+        table.Columns.Add("Date", GetType(Date))
+        table.Columns.Add("Task", GetType(String))
+        table.Columns.Add("Hours Worked", GetType(Integer))
+        table.Columns.Add("Pay (£)", GetType(Integer))
+        myselectquery = "SELECT Task, Hours_Worked, Date_Worked FROM Workers_hours WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")
+        walterDbCommand = New OleDbCommand(myselectquery, walterDbConnection)
+        Dim myReader As OleDbDataReader
+        myReader = walterDbCommand.ExecuteReader()
+        While myReader.Read()
+            table.Rows.Add(myReader.GetValue(2), myReader.GetValue(0), myReader.GetValue(1), (myReader.GetValue(1) * SQLReading("SELECT Hourly_Rate FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")))
+        End While
+        myReader.Close()
+        Invoices.I_Total.Text = "£" & (SQLReading("SELECT Hourly_Rate FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'") * SQLReading("SELECT SUM(Hours_Worked) FROM Workers_hours WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")))
+        Return (table)
+    End Function
+
+    Public Function GetTableSupplier() As DataTable
+        'Invoices.I_Date1.CustomFormat = "dd/MM/yyyy"
+        'Invoices.I_Date2.CustomFormat = "dd/MM/yyyy"
+        Dim myselectquery As String
+        Dim table As New DataTable
+        table.Columns.Add("Date", GetType(Date))
+        table.Columns.Add("Job", GetType(String))
+        table.Columns.Add("Cost", GetType(Integer))
+        myselectquery = "SELECT JobID, Cost, Date_of_invoice FROM supplier_outgoings WHERE SupplierID = " & SQLReading("SELECT SupplierID FROM Supplier WHERE Supplier_Name = '" + Invoices.I_N.Text + "' AND Date_of_invoice is >= " + Invoices.I_Date1.Text + " AND Date_of_invoice is <= " + Invoices.I_Date2.Text)
+        walterDbCommand = New OleDbCommand(myselectquery, walterDbConnection)
+        Dim myReader As OleDbDataReader
+        Dim JobID As String
+        myReader = walterDbCommand.ExecuteReader()
+        While myReader.Read()
+            JobID = myReader.GetValue(0)
+            table.Rows.Add(myReader.GetValue(2), SQLReading("SELECT Job_Name FROM Jobs WHERE JobID = " + JobID), myReader.GetValue(1))
+        End While
+        myReader.Close()
+        Invoices.I_Total.Text = "£" & SQLReading("SELECT SUM(Cost) FROM supplier_outgoings WHERE SupplierID = " & SQLReading("SELECT SupplierID FROM Supplier WHERE Supplier_Name = '" + Invoices.I_N.Text + "'"))
 
         Return (table)
     End Function

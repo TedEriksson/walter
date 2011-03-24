@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+
 Public Class Invoices
     Private Sub I_N_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles I_N.GotFocus
         Dim table As String
@@ -28,6 +29,17 @@ Public Class Invoices
             Dim table As DataTable = GetTableWorker()
             DataGridView1.DataSource = GetTableWorker()
         End If
+        If I_Type.Text = "Job" Then
+            Dim table As DataTable = GetTableJob()
+            DataGridView1.DataSource = GetTableJob()
+        End If
+        If I_Type.Text = "Supplier" Then
+            Dim table As DataTable = GetTableSupplier()
+            DataGridView1.DataSource = GetTableSupplier()
+        End If
     End Sub
 
+    Private Sub Invoices_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
+    End Sub
 End Class
