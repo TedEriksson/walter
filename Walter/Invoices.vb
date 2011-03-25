@@ -40,6 +40,7 @@ Public Class Invoices
     End Sub
 
     Private Sub Invoices_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        I_Date1.CustomFormat = "MM/dd/yyyy"
+        I_Date2.CustomFormat = "MM/dd/yyyy"
     End Sub
 End Class

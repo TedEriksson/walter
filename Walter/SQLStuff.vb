@@ -39,7 +39,7 @@ Module SQLStuff
         table.Columns.Add("Task", GetType(String))
         table.Columns.Add("Hours Worked", GetType(Integer))
         table.Columns.Add("Pay (£)", GetType(Integer))
-        myselectquery = "SELECT Task, Hours_Worked, Date_Worked FROM Workers_hours WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")
+        myselectquery = "SELECT Task, Hours_Worked, Date_Worked FROM Workers_hours WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'") & " AND Date_worked >= #" + Invoices.I_Date1.Text + "# AND Date_worked <= #" + Invoices.I_Date2.Text + "#"
         walterDbCommand = New OleDbCommand(myselectquery, walterDbConnection)
         Dim myReader As OleDbDataReader
         myReader = walterDbCommand.ExecuteReader()
@@ -47,26 +47,50 @@ Module SQLStuff
             table.Rows.Add(myReader.GetValue(2), myReader.GetValue(0), myReader.GetValue(1), (myReader.GetValue(1) * SQLReading("SELECT Hourly_Rate FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")))
         End While
         myReader.Close()
-        Invoices.I_Total.Text = "£" & (SQLReading("SELECT Hourly_Rate FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'") * SQLReading("SELECT SUM(Hours_Worked) FROM Workers_hours WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")))
-        Return (table)
+        Try
+            Invoices.I_Total.Text = "£" & (SQLReading("SELECT Hourly_Rate FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'") * SQLReading("SELECT SUM(Hours_Worked) FROM Workers_hours WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'") & " AND Date_worked >= #" + Invoices.I_Date1.Text + "# AND Date_worked <= #" + Invoices.I_Date2.Text + "#"))
+        Catch ex As Exception
+
+        End Try
+                Return (table)
     End Function
 
     Public Function GetTableJob() As DataTable
         Dim myselectquery As String
+        Dim eachworker, Tcost, TotalLabour As Integer
         Dim table As New DataTable
         table.Columns.Add("Date", GetType(Date))
-        table.Columns.Add("Task", GetType(String))
-        table.Columns.Add("Hours Worked", GetType(Integer))
-        table.Columns.Add("Pay (£)", GetType(Integer))
-        myselectquery = "SELECT Task, Hours_Worked, Date_Worked FROM Workers_hours WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")
+        table.Columns.Add("Labour or Materials", GetType(String))
+        table.Columns.Add("Task or Supplier Name", GetType(String))
+        table.Columns.Add("Cost (£)", GetType(Integer))
+        TotalLabour = 0
+        'Labour
+        myselectquery = "SELECT Task, Date_Worked, WorkerID FROM Workers_hours WHERE JobID = " & SQLReading("SELECT JobID FROM Jobs WHERE Job_Name = '" + Invoices.I_N.Text + "'") & " AND Date_worked >= #" + Invoices.I_Date1.Text + "# AND Date_worked <= #" + Invoices.I_Date2.Text + "#"
         walterDbCommand = New OleDbCommand(myselectquery, walterDbConnection)
         Dim myReader As OleDbDataReader
         myReader = walterDbCommand.ExecuteReader()
         While myReader.Read()
-            table.Rows.Add(myReader.GetValue(2), myReader.GetValue(0), myReader.GetValue(1), (myReader.GetValue(1) * SQLReading("SELECT Hourly_Rate FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")))
+            eachworker = (SQLReading("SELECT Hourly_Rate FROM Worker WHERE WorkerID = " & myReader(2)) * (SQLReading("SELECT Hours_Worked FROM Workers_hours WHERE JobID = " & SQLReading("SELECT JobID FROM Jobs WHERE Job_Name = '" + Invoices.I_N.Text + "'") & " AND Date_worked >= #" + Invoices.I_Date1.Text + "# AND Date_worked <= #" + Invoices.I_Date2.Text + "# AND WorkerID = " & myReader.GetValue(2))))
+            TotalLabour = TotalLabour + eachworker
+            table.Rows.Add(myReader.GetValue(1), "Labour", myReader.GetValue(0), eachworker)
         End While
         myReader.Close()
-        Invoices.I_Total.Text = "£" & (SQLReading("SELECT Hourly_Rate FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'") * SQLReading("SELECT SUM(Hours_Worked) FROM Workers_hours WHERE WorkerID = " & SQLReading("SELECT WorkerID FROM Worker WHERE Worker_Name = '" + Invoices.I_N.Text + "'")))
+        'Supplier
+        Dim myselectquery1 As String
+        myselectquery1 = "SELECT SupplierID, Cost, Date_of_invoice FROM supplier_outgoings WHERE JobID = " & SQLReading("SELECT JobID FROM Jobs WHERE Job_Name = '" + Invoices.I_N.Text + "'") & " AND Date_of_invoice >= #" + Invoices.I_Date1.Text + "# AND Date_of_invoice <= #" + Invoices.I_Date2.Text + "#"
+        walterDbCommand = New OleDbCommand(myselectquery1, walterDbConnection)
+        Dim myReader1 As OleDbDataReader
+        myReader1 = walterDbCommand.ExecuteReader()
+        While myReader1.Read()
+            table.Rows.Add(myReader1.GetValue(2), "Materials", SQLReading("SELECT Supplier_Name FROM Supplier WHERE SupplierID = " & myReader1.GetValue(0)), myReader1.GetValue(1))
+        End While
+        myReader.Close()
+        If SQLReading("SELECT SUM(Cost) FROM supplier_outgoings WHERE JobID = " & SQLReading("SELECT JobID FROM Jobs WHERE Job_Name = '" + Invoices.I_N.Text + "'") & " AND Date_of_invoice >= #" + Invoices.I_Date1.Text + "# AND Date_of_invoice <= #" + Invoices.I_Date2.Text + "#").Equals(DBNull.Value) Then
+            Tcost = 0
+        Else
+            Tcost = SQLReading("SELECT SUM(Cost) FROM supplier_outgoings WHERE JobID = " & SQLReading("SELECT JobID FROM Jobs WHERE Job_Name = '" + Invoices.I_N.Text + "'") & " AND Date_of_invoice >= #" + Invoices.I_Date1.Text + "# AND Date_of_invoice <= #" + Invoices.I_Date2.Text + "#")
+        End If
+        Invoices.I_Total.Text = "£" & (Tcost + TotalLabour)
         Return (table)
     End Function
 
@@ -76,7 +100,6 @@ Module SQLStuff
         table.Columns.Add("Date", GetType(Date))
         table.Columns.Add("Job", GetType(String))
         table.Columns.Add("Cost", GetType(Integer))
-        'Problem with date'
         myselectquery = "SELECT JobID, Cost, Date_of_invoice FROM supplier_outgoings WHERE SupplierID = " & SQLReading("SELECT SupplierID FROM Supplier WHERE Supplier_Name = '" + Invoices.I_N.Text + "'") & " AND Date_of_invoice >= #" + Invoices.I_Date1.Text + "# AND Date_of_invoice <= #" + Invoices.I_Date2.Text + "#"
         walterDbCommand = New OleDbCommand(myselectquery, walterDbConnection)
         Dim myReader As OleDbDataReader
@@ -87,8 +110,7 @@ Module SQLStuff
             table.Rows.Add(myReader.GetValue(2), SQLReading("SELECT Job_Name FROM Jobs WHERE JobID = " + JobID), myReader.GetValue(1))
         End While
         myReader.Close()
-        'Problem with date'
-        Invoices.I_Total.Text = "£" & SQLReading("SELECT SUM(Cost) FROM supplier_outgoings WHERE SupplierID = " & SQLReading("SELECT SupplierID FROM Supplier WHERE Supplier_Name = '" + Invoices.I_N.Text + "'") & " AND Date_of_invoice <= " + Invoices.I_Date1.Text + " AND Date_of_invoice >= " + Invoices.I_Date2.Text)
+        Invoices.I_Total.Text = "£" & SQLReading("SELECT SUM(Cost) FROM supplier_outgoings WHERE SupplierID = " & SQLReading("SELECT SupplierID FROM Supplier WHERE Supplier_Name = '" + Invoices.I_N.Text + "'") & " AND Date_of_invoice >= #" + Invoices.I_Date1.Text + "# AND Date_of_invoice <= #" + Invoices.I_Date2.Text + "#")
         Return (table)
     End Function
 
