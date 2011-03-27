@@ -80,7 +80,7 @@ Partial Class Job_Status
         'JS_T
         '
         Me.JS_T.AutoSize = True
-        Me.JS_T.Location = New System.Drawing.Point(113, 133)
+        Me.JS_T.Location = New System.Drawing.Point(113, 119)
         Me.JS_T.Name = "JS_T"
         Me.JS_T.Size = New System.Drawing.Size(0, 13)
         Me.JS_T.TabIndex = 36

@@ -61,3 +61,10 @@ C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Invoices.resources
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.exe
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.xml
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.pdb
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Options.resources
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Add_Worker.resources
+C:\Users\Ted\Desktop\Walter\Walter\bin\Debug\Walter.exe.manifest
+C:\Users\Ted\Desktop\Walter\Walter\bin\Debug\Walter.application
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.exe.manifest
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.application
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.TrustInfo.xml

@@ -2,7 +2,7 @@
 Module SQLStuff
 
     'Fields/Variables
-    Public walterDbConnection As New OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=" & Application.StartupPath & "\..\..\walter_database.mdb")
+    Public walterDbConnection As New OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;Data Source=" & Application.StartupPath & "\..\..\Resources\walter_database.mdb")
     Public walterDbCommand As New OleDbCommand("", walterDbConnection)
 
     'Methods/Subs
