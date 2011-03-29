@@ -212,6 +212,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SQLStuff.vb" />
+    <Compile Include="WalterAbout.Designer.vb">
+      <DependentUpon>WalterAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WalterAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Add_Customer.resx">
@@ -261,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WalterAbout.resx">
+      <DependentUpon>WalterAbout.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

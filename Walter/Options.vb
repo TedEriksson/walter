@@ -18,4 +18,8 @@ Public Class Options
             MsgBox("Please Make sure the passwords are the same!")
         End If
     End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        WalterAbout.Visible = True
+    End Sub
 End Class

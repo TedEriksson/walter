@@ -16,32 +16,27 @@ C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Splash.resources
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Add_Supplier.resources
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.exe
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.xml
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.pdb
-F:\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.exe
-F:\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.pdb
-F:\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.xml
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\ResolveAssemblyReference.cache
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Customer.resources
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Material_invoice.resources
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Supplier.resources
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Daily_Form.resources
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Edit_Details.resources
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.MainMenu.resources
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Resources.resources
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.NewJob.resources
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Splash.resources
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.read.1.tlog
-F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Job_Status.resources
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Payments.resources
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Login.resources
 C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Invoices.resources
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Options.resources
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Add_Worker.resources
+C:\Users\Ted\Desktop\Walter\Walter\bin\Debug\Walter.exe.manifest
+C:\Users\Ted\Desktop\Walter\Walter\bin\Debug\Walter.application
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.exe.manifest
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.application
+C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.TrustInfo.xml
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.exe.manifest
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.application
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.exe
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.pdb
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.xml
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\ResolveAssemblyReference.cache
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Customer.resources
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Material_invoice.resources
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Supplier.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Worker.resources
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Daily_Form.resources
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Edit_Details.resources
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Invoices.resources
@@ -55,16 +50,39 @@ C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Invoices.resources
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Splash.resources
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.read.1.tlog
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.write.1.tlog
-\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.exe
-\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.pdb
-\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.xml
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.TrustInfo.xml
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.exe.manifest
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.application
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.exe
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.xml
 \\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.pdb
-C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Options.resources
-C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.Add_Worker.resources
-C:\Users\Ted\Desktop\Walter\Walter\bin\Debug\Walter.exe.manifest
-C:\Users\Ted\Desktop\Walter\Walter\bin\Debug\Walter.application
-C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.exe.manifest
-C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.application
-C:\Users\Ted\Desktop\Walter\Walter\obj\x86\Debug\Walter.TrustInfo.xml
+F:\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.exe.manifest
+F:\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.application
+F:\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.exe
+F:\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.pdb
+F:\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.xml
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Customer.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Material_invoice.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Supplier.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Add_Worker.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Daily_Form.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Edit_Details.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Invoices.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Job_Status.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Login.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.MainMenu.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Resources.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.NewJob.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Options.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Payments.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.Splash.resources
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.TrustInfo.xml
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.exe.manifest
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.application
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.exe
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.xml
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.pdb
+F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.WalterAbout.resources

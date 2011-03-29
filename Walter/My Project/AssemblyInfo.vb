@@ -1,4 +1,6 @@
-﻿Imports System
+﻿Imports System.Resources
+
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -9,13 +11,13 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Walter")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Sussex Downs College")> 
+<Assembly: AssemblyDescription("Walter is a Building Job Income and Outgoings Tracker")> 
+<Assembly: AssemblyCompany("TedEriksson")> 
 <Assembly: AssemblyProduct("Walter")> 
-<Assembly: AssemblyCopyright("Copyright © Sussex Downs College 2011")> 
+<Assembly: AssemblyCopyright("Copyright © Ted Eriksson 2011")> 
 <Assembly: AssemblyTrademark("")> 
 
-<Assembly: ComVisible(False)>
+<Assembly: ComVisible(False)> 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("8988295f-181d-4102-9629-94d68085b09a")> 
@@ -33,3 +35,5 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyVersion("1.0.0.0")> 
 <Assembly: AssemblyFileVersion("1.0.0.0")> 
+
+<Assembly: NeutralResourcesLanguageAttribute("en-GB")> 
