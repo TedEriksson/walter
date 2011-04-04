@@ -148,6 +148,7 @@ Partial Class NewJob
         '
         'NJ_Customer
         '
+        Me.NJ_Customer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.NJ_Customer.FormattingEnabled = True
         Me.NJ_Customer.Location = New System.Drawing.Point(116, 64)
         Me.NJ_Customer.Name = "NJ_Customer"

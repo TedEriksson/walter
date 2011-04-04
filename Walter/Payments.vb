@@ -16,4 +16,8 @@
         MainMenu.Visible = True
         Me.Close()
     End Sub
+
+    Private Sub P_Amount_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles P_Amount.KeyPress
+        If Not (Char.IsDigit(e.KeyChar) Or Char.IsControl(e.KeyChar)) Then e.Handled = True
+    End Sub
 End Class

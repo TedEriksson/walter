@@ -37,4 +37,8 @@ Public Class Add_Material_invoice
         AMI_Date.CustomFormat = "dd/MM/yyyy"
         SQLWriting("INSERT INTO supplier_outgoings(SupplierID, JobID, Cost, Date_of_invoice) VALUES('" & SQLReading("SELECT SupplierID FROM Supplier WHERE Supplier_Name = '" + ADM_Supplier_Name.Text + "'") & "'," & SQLReading("SELECT JobID FROM Jobs WHERE Job_Name = '" + AMI_Job_Name.Text + "'") & "," + ADM_Cost.Text + ",'" + AMI_Date.Text + "')")
     End Sub
+
+    Private Sub ADM_Cost_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles ADM_Cost.KeyPress
+        If Not (Char.IsDigit(e.KeyChar) Or Char.IsControl(e.KeyChar)) Then e.Handled = True
+    End Sub
 End Class

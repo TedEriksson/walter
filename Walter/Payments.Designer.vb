@@ -42,6 +42,7 @@ Partial Class Payments
         '
         'P_Job
         '
+        Me.P_Job.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.P_Job.FormattingEnabled = True
         Me.P_Job.Location = New System.Drawing.Point(116, 12)
         Me.P_Job.Name = "P_Job"

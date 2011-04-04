@@ -28,4 +28,9 @@ Public Class NewJob
             Me.Enabled = False
         End If
     End Sub
+
+
+    Private Sub NJ_InitialBudget_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles NJ_InitialBudget.KeyPress
+        If Not (Char.IsDigit(e.KeyChar) Or Char.IsControl(e.KeyChar)) Then e.Handled = True
+    End Sub
 End Class

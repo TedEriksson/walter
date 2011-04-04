@@ -35,6 +35,7 @@ Partial Class Job_Status
         '
         'JS_Job
         '
+        Me.JS_Job.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.JS_Job.FormattingEnabled = True
         Me.JS_Job.Location = New System.Drawing.Point(116, 12)
         Me.JS_Job.Name = "JS_Job"

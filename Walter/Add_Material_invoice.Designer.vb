@@ -38,6 +38,7 @@ Partial Class Add_Material_invoice
         '
         'ADM_Supplier_Name
         '
+        Me.ADM_Supplier_Name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ADM_Supplier_Name.FormattingEnabled = True
         Me.ADM_Supplier_Name.Location = New System.Drawing.Point(116, 59)
         Me.ADM_Supplier_Name.Name = "ADM_Supplier_Name"
@@ -116,6 +117,7 @@ Partial Class Add_Material_invoice
         '
         'AMI_Job_Name
         '
+        Me.AMI_Job_Name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.AMI_Job_Name.FormattingEnabled = True
         Me.AMI_Job_Name.Location = New System.Drawing.Point(116, 33)
         Me.AMI_Job_Name.Name = "AMI_Job_Name"

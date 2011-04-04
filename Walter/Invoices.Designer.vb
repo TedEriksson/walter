@@ -39,22 +39,22 @@ Partial Class Invoices
         '
         'I_Type
         '
+        Me.I_Type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.I_Type.FormattingEnabled = True
         Me.I_Type.Items.AddRange(New Object() {"Job", "Worker", "Supplier"})
         Me.I_Type.Location = New System.Drawing.Point(12, 27)
         Me.I_Type.Name = "I_Type"
         Me.I_Type.Size = New System.Drawing.Size(165, 21)
         Me.I_Type.TabIndex = 0
-        Me.I_Type.Text = "Select Type"
         '
         'I_N
         '
+        Me.I_N.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.I_N.FormattingEnabled = True
         Me.I_N.Location = New System.Drawing.Point(183, 27)
         Me.I_N.Name = "I_N"
         Me.I_N.Size = New System.Drawing.Size(266, 21)
         Me.I_N.TabIndex = 1
-        Me.I_N.Text = "Then Name"
         '
         'Label1
         '

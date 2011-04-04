@@ -158,6 +158,15 @@ Public Class Edit_Details
             Me.Close()
         End If
     End Sub
+
+    Private Sub EDJ_Initial_Budget_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles EDJ_Initial_Budget.KeyPress
+        If Not (Char.IsDigit(e.KeyChar) Or Char.IsControl(e.KeyChar)) Then e.Handled = True
+    End Sub
+
+
+    Private Sub EDW_HR_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles EDW_HR.KeyPress
+        If Not (Char.IsDigit(e.KeyChar) Or Char.IsControl(e.KeyChar)) Then e.Handled = True
+    End Sub
 End Class
 
 

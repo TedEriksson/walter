@@ -125,6 +125,7 @@ Partial Class Edit_Details
         '
         'EDJ_Customer
         '
+        Me.EDJ_Customer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.EDJ_Customer.FormattingEnabled = True
         Me.EDJ_Customer.Location = New System.Drawing.Point(113, 64)
         Me.EDJ_Customer.Name = "EDJ_Customer"
@@ -133,6 +134,7 @@ Partial Class Edit_Details
         '
         'EDJ_Job
         '
+        Me.EDJ_Job.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.EDJ_Job.FormattingEnabled = True
         Me.EDJ_Job.Location = New System.Drawing.Point(113, 11)
         Me.EDJ_Job.Name = "EDJ_Job"
@@ -272,6 +274,7 @@ Partial Class Edit_Details
         '
         'EDW_Worker
         '
+        Me.EDW_Worker.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.EDW_Worker.FormattingEnabled = True
         Me.EDW_Worker.Location = New System.Drawing.Point(113, 11)
         Me.EDW_Worker.Name = "EDW_Worker"
@@ -399,6 +402,7 @@ Partial Class Edit_Details
         '
         'EDC_Customer
         '
+        Me.EDC_Customer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.EDC_Customer.FormattingEnabled = True
         Me.EDC_Customer.Location = New System.Drawing.Point(113, 11)
         Me.EDC_Customer.Name = "EDC_Customer"
@@ -510,6 +514,7 @@ Partial Class Edit_Details
         '
         'EDS_Supplier
         '
+        Me.EDS_Supplier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.EDS_Supplier.FormattingEnabled = True
         Me.EDS_Supplier.Location = New System.Drawing.Point(113, 11)
         Me.EDS_Supplier.Name = "EDS_Supplier"
