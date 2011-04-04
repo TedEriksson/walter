@@ -36,4 +36,13 @@ Public Class Daily_Form
             Me.Enabled = False
         End If
     End Sub
+
+    Private Sub DF_Hours_worked_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles DF_Hours_worked.KeyPress
+        If Not (Char.IsDigit(e.KeyChar) Or Char.IsControl(e.KeyChar)) Then e.Handled = True
+    End Sub
+
+    Private Sub Daily_Form_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        DF_Job.DropDownStyle = 2
+        DF_Worker.DropDownStyle = 2
+    End Sub
 End Class

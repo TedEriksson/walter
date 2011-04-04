@@ -86,3 +86,6 @@ F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.exe
 F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.xml
 F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.pdb
 F:\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.WalterAbout.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\obj\x86\Debug\Walter.WalterAbout.resources
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Walter.exe.config
+\\s-grandprix\Users\Students\Lewes\387864\Visual Studio 2010\Projects\Walter\Walter\bin\Debug\Resources\walter_database.mdb

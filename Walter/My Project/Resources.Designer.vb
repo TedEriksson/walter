@@ -67,6 +67,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property walter_database() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("walter_database", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
         Friend ReadOnly Property walter_spalshhs() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("walter spalshhs", resourceCulture)

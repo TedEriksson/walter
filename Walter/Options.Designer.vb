@@ -29,8 +29,8 @@ Partial Class Options
         Me.O_P2 = New System.Windows.Forms.TextBox()
         Me.O_Set = New System.Windows.Forms.Button()
         Me.O_Back = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.O_Backup = New System.Windows.Forms.Button()
+        Me.O_Delete = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -96,23 +96,23 @@ Partial Class Options
         Me.O_Back.Text = "Back"
         Me.O_Back.UseVisualStyleBackColor = True
         '
-        'Button1
+        'O_Backup
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 139)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(123, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Back-up Database"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.O_Backup.Location = New System.Drawing.Point(12, 139)
+        Me.O_Backup.Name = "O_Backup"
+        Me.O_Backup.Size = New System.Drawing.Size(123, 23)
+        Me.O_Backup.TabIndex = 7
+        Me.O_Backup.Text = "Back-up Database"
+        Me.O_Backup.UseVisualStyleBackColor = True
         '
-        'Button2
+        'O_Delete
         '
-        Me.Button2.Location = New System.Drawing.Point(174, 139)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(123, 23)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "Delete all Data"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.O_Delete.Location = New System.Drawing.Point(174, 139)
+        Me.O_Delete.Name = "O_Delete"
+        Me.O_Delete.Size = New System.Drawing.Size(123, 23)
+        Me.O_Delete.TabIndex = 8
+        Me.O_Delete.Text = "Delete all Data"
+        Me.O_Delete.UseVisualStyleBackColor = True
         '
         'Label4
         '
@@ -139,8 +139,8 @@ Partial Class Options
         Me.ClientSize = New System.Drawing.Size(309, 223)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.O_Delete)
+        Me.Controls.Add(Me.O_Backup)
         Me.Controls.Add(Me.O_Back)
         Me.Controls.Add(Me.O_Set)
         Me.Controls.Add(Me.O_P2)
@@ -161,8 +161,8 @@ Partial Class Options
     Friend WithEvents O_P2 As System.Windows.Forms.TextBox
     Friend WithEvents O_Set As System.Windows.Forms.Button
     Friend WithEvents O_Back As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents O_Backup As System.Windows.Forms.Button
+    Friend WithEvents O_Delete As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class
