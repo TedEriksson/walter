@@ -109,7 +109,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>bOp5AmtCKRolYfdeLdA7f+I99oA=</dsig:DigestValue>
+        <dsig:DigestValue>nnSiDS+NbKyLs13fNY4V6BRNAnw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -122,13 +122,13 @@
       <dsig:DigestValue>M0JD6MjwnBUBFhEoxVBXS+r46m8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Walter.exe.config" size="1655">
+  <file name="Walter.exe.config" size="1687">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>s7H5265KDkp/gaxOXdVQPqMBxkk=</dsig:DigestValue>
+      <dsig:DigestValue>W9Wxef7VqSJcBvb5YuNwPhmpJvg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="walter.jpg" size="42002">
