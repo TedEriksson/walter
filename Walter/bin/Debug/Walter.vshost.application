@@ -1,21 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <assemblyIdentity name="Walter.application" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" />
+<<<<<<< HEAD
   <description asmv2:publisher="Walter" asmv2:product="Walter" xmlns="urn:schemas-microsoft-com:asm.v1" />
+=======
+  <description asmv2:publisher="Sussex Downs College" asmv2:product="Walter" xmlns="urn:schemas-microsoft-com:asm.v1" />
+>>>>>>> 3d1d70ed7bc30b5723973ff973c2fee2b2b2d4d5
   <deployment install="true" mapFileExtensions="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" codebase="Walter.exe.manifest" size="8437">
+=======
+    <dependentAssembly dependencyType="install" codebase="Walter.exe.manifest" size="8448">
+>>>>>>> 3d1d70ed7bc30b5723973ff973c2fee2b2b2d4d5
       <assemblyIdentity name="Walter.exe" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+<<<<<<< HEAD
         <dsig:DigestValue>3t8uZ7JXh1GWkhzUV05hzpacjks=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>+I/+Ye47Q/TzgldPMijZqSZ0qz4=</dsig:DigestValue>
+>>>>>>> 3d1d70ed7bc30b5723973ff973c2fee2b2b2d4d5
       </hash>
     </dependentAssembly>
   </dependency>

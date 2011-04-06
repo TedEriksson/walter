@@ -102,14 +102,22 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Walter.exe" size="1089536">
+=======
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Walter.exe" size="1088512">
+>>>>>>> 3d1d70ed7bc30b5723973ff973c2fee2b2b2d4d5
       <assemblyIdentity name="Walter" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+<<<<<<< HEAD
         <dsig:DigestValue>KZ5OmKSFqRDAA2WlHWnDnLlMBt8=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>U0f7GslLI4kGqoLBc7/csnbXUD0=</dsig:DigestValue>
+>>>>>>> 3d1d70ed7bc30b5723973ff973c2fee2b2b2d4d5
       </hash>
     </dependentAssembly>
   </dependency>
@@ -122,13 +130,21 @@
       <dsig:DigestValue>M0JD6MjwnBUBFhEoxVBXS+r46m8=</dsig:DigestValue>
     </hash>
   </file>
+<<<<<<< HEAD
   <file name="Walter.exe.config" size="1655">
+=======
+  <file name="Walter.exe.config" size="1687">
+>>>>>>> 3d1d70ed7bc30b5723973ff973c2fee2b2b2d4d5
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+<<<<<<< HEAD
       <dsig:DigestValue>s7H5265KDkp/gaxOXdVQPqMBxkk=</dsig:DigestValue>
+=======
+      <dsig:DigestValue>W9Wxef7VqSJcBvb5YuNwPhmpJvg=</dsig:DigestValue>
+>>>>>>> 3d1d70ed7bc30b5723973ff973c2fee2b2b2d4d5
     </hash>
   </file>
   <file name="walter.jpg" size="42002">
